@@ -1,0 +1,42 @@
+.hero {
+    color: white;
+    background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url("../public/hero-bg.png") no-repeat center;
+    background-size: cover;
+    border-radius: 0 0 4rem 4rem;
+}
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding: 11.65rem 0;
+}
+
+.hero__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--color-grey);
+    font-size: 1.25rem;
+    width: 33.375rem;
+}
+
+.hero__item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.hero__options a {
+    color: white;
+}
+
+.hero__options {
+    display: flex;
+    gap: 2rem;
+}

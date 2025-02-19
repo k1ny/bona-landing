@@ -1,0 +1,11 @@
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 3rem;
+}
