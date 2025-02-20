@@ -1,0 +1,101 @@
+.services .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.services__item {
+    width: 23.125rem;
+    height: 23.125rem;
+    border-radius: 1.25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.services__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+    transition: opacity 0.1s ease;
+    opacity: 0;
+    z-index: 1;
+}
+
+.services__item-content h3,
+.service__price {
+    max-width: 17rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.service__description {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__item:nth-child(1) {
+    background: rgba(0, 0, 0, 0.35) url("/public/service-1.png") no-repeat
+        center/cover;
+}
+.services__item:nth-child(2) {
+    background: rgba(0, 0, 0, 0.35) url("/public/service-2.png") no-repeat
+        center/cover;
+}
+.services__item:nth-child(3) {
+    background: rgba(0, 0, 0, 0.35) url("/public/service-3.png") no-repeat
+        center/cover;
+}
+
+.services__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transform: translateY(calc(100% + 2.5rem));
+    padding: 0 0.75rem;
+    color: white;
+    position: absolute;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.service__details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.services__item:hover .service__details {
+    opacity: 1;
+}
+
+.services__item:hover .services__item-content {
+    transform: translateY(calc(100% - 9rem));
+}
+
+.services__item:hover::before {
+    opacity: 1; /* Показываем фильтр при ховере */
+}
+
+.service__footer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 0.5rem;
+}
+
+.service__footer a {
+    color: white;
+    font-size: 0.85rem;
+}
