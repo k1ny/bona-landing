@@ -1,3 +1,46 @@
+const numberInfo = document.querySelectorAll(".statistic__item-number");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      numberInfo.forEach((el) => {
+        animateNumbers(el);
+        observer.unobserve(entry.target);
+      });
+    }
+  });
+});
+
+const animateNumbers = (el: Element) => {
+  let start = 0;
+  const end = el.textContent ? Number(el.textContent.replace(/[+%]/g, "")) : 0;
+  const duration = 2500;
+  const startTime = performance.now();
+
+  const easeInOut = (t: number) => {
+    return t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2;
+  };
+
+  const animate = (currentTime: number) => {
+    const elapsed = currentTime - startTime;
+    const t = Math.min(elapsed / duration, 1);
+    const easingValue = easeInOut(t);
+
+    start = Math.floor(easingValue * end);
+
+    el.textContent
+      ? (el.textContent = start + el.textContent[el.textContent.length - 1])
+      : (el.textContent = "");
+
+    if (t < 1) {
+      requestAnimationFrame(animate);
+    }
+  };
+  requestAnimationFrame(animate);
+};
+
+observer.observe(numberInfo[0]);
+
 const nameInput = document.getElementById("name") as HTMLInputElement;
 const phoneInput = document.getElementById("phone") as HTMLInputElement;
 const mailInput = document.getElementById("mail") as HTMLInputElement;
@@ -17,7 +60,7 @@ formButton.addEventListener("click", async (e) => {
     console.log("nope");
   else
     try {
-      const response = await fetch("http://localhost:3001/send", {
+      const response = await fetch("/api/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

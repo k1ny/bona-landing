@@ -1,0 +1,44 @@
+.statistic {
+    background-color: var(--color-green);
+    padding: 3.5rem 0;
+    border-radius: 5rem 5rem 0 0;
+}
+
+.statistic__list {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    color: white;
+}
+
+.statistic__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.2rem;
+}
+.statistic__item-number {
+    font-weight: 800;
+    font-size: 6rem;
+}
+
+.statistic__item-label {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.statistic__item-description {
+    font-size: 1rem;
+}
+
+.statistic__item:nth-child(1) {
+    width: 11.625rem;
+}
+
+.statistic__item:nth-child(2) {
+    width: 15.75rem;
+}
+
+.statistic__item:nth-child(3) {
+    width: 17.25rem;
+}
