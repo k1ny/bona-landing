@@ -1,0 +1,36 @@
+.notifications {
+    position: fixed;
+    bottom: 2.25rem;
+    right: 2.25rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.notification {
+    position: relative;
+    min-width: 16rem;
+    max-width: 20rem;
+    padding: 1rem 4rem 1rem 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.1);
+}
+
+.notification__title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.notification__close {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    background: none;
+    top: 1rem;
+    right: 1rem;
+}
+.cross {
+    transform: rotate(45deg);
+}

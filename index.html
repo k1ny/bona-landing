@@ -3,10 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="/src/global.css" />
-        <link rel="stylesheet" href="/src/header.css" />
-        <link rel="stylesheet" href="/src/hero.css" />
-        <link rel="stylesheet" href="/src/services.css" />
-        <link rel="stylesheet" href="/src/statistic.css" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -107,7 +103,7 @@
                                     </p>
                                     <div class="service__footer">
                                         <p class="service__price">
-                                            от 20.000 ₽
+                                            от 85.000₽ м3
                                         </p>
                                         <a
                                             href="#consultation-section"
@@ -134,7 +130,7 @@
                                     </p>
                                     <div class="service__footer">
                                         <p class="service__price">
-                                            от 20.000 ₽
+                                            от 3.500₽ м2
                                         </p>
                                         <a
                                             href="#consultation-section"
@@ -160,9 +156,7 @@
                                         эксплуатацию в России.
                                     </p>
                                     <div class="service__footer">
-                                        <p class="service__price">
-                                            от 20.000 ₽
-                                        </p>
+                                        <p class="service__price">Договорная</p>
                                         <a
                                             href="#consultation-section"
                                             class="button button_primary"
@@ -206,36 +200,73 @@
                     </div>
                 </div>
             </section>
+
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__content">
+                        <h2 class="feedback__content-title">
+                            <strong> Получите бесплатную консультацию </strong>
+                            нашего специалиста
+                        </h2>
+
+                        <div class="feedback__content-mixed">
+                            <strong class="feedback__content-question"
+                                >В какое время с вами удобно связаться?</strong
+                            >
+                            <form class="feedback__form">
+                                <select id="time">
+                                    <option value="Сейчас">Сейчас</option>
+
+                                    <option value="В течении часа">
+                                        В течении часа
+                                    </option>
+                                    <option value="В течении дня">
+                                        В течении дня
+                                    </option>
+                                    <option value="На этой неделе">
+                                        На этой неделе
+                                    </option>
+                                </select>
+                                <input
+                                    placeholder="Ваше имя"
+                                    id="name"
+                                    name="name"
+                                    autocomplete="name"
+                                    class="input"
+                                />
+                                <input
+                                    placeholder="Ваш номер телефона"
+                                    id="phone"
+                                    name="phone"
+                                    type="tel"
+                                    autocomplete="tel"
+                                    class="input phone-mask"
+                                />
+                                <button
+                                    class="contact-button button button_primary"
+                                    type="submit"
+                                >
+                                    Пререзвоните мне
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="notifications"></section>
+
+            <template id="notification">
+                <div class="notification">
+                    <strong class="notification__status"></strong>
+                    <p class="notification__reason"></p>
+                    <button class="notification__close">
+                        <img src="/public/cross.svg" class="cross" />
+                    </button>
+                </div>
+            </template>
         </main>
 
-        <!-- <div>
-            <form class="contact-form">
-                <input
-                    placeholder="Ваше имя"
-                    id="name"
-                    name="name"
-                    autocomplete="name"
-                    class="input"
-                />
-                <input
-                    placeholder="Ваш номер телефона"
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    autocomplete="tel"
-                    class="input phone-mask"
-                />
-                <input
-                    placeholder="Ваша почта"
-                    id="mail"
-                    name="mail"
-                    type="mail"
-                    autocomplete="mail"
-                    class="input"
-                />
-                <button class="contact-button" type="submit">Отправить</button>
-            </form>
-        </div> -->
-        <script src="/src/main.js"></script>
+        <script type="module" src="/src/main.js"></script>
     </body>
 </html>

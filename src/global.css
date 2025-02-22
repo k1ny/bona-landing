@@ -1,3 +1,10 @@
+@import url("./feedback.css");
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./services.css");
+@import url("./statistic.css");
+@import url("./notifications.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +50,7 @@ p {
 .button {
     padding: 0.75rem 1rem;
     border-radius: 0.75rem;
+    cursor: pointer;
     transition:
         scale 0.15s ease,
         background-color 0.15s ease;
@@ -50,6 +58,7 @@ p {
 
 .button_primary {
     background-color: var(--color-green);
+    color: white;
 }
 
 .button_outline_black {

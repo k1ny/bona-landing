@@ -1,9 +1,10 @@
-const numberInfo = document.querySelectorAll(".statistic__item-number");
+import { z } from "zod";
 
+const number = document.querySelectorAll(".statistic__item-number");
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      numberInfo.forEach((el) => {
+      number.forEach((el) => {
         animateNumbers(el);
         observer.unobserve(entry.target);
       });
@@ -39,26 +40,96 @@ const animateNumbers = (el: Element) => {
   requestAnimationFrame(animate);
 };
 
-observer.observe(numberInfo[0]);
+observer.observe(number[0]);
 
 const nameInput = document.getElementById("name") as HTMLInputElement;
 const phoneInput = document.getElementById("phone") as HTMLInputElement;
-const mailInput = document.getElementById("mail") as HTMLInputElement;
+const timeInput = document.getElementById("time") as HTMLInputElement;
 const formButton = document.querySelector(
   ".contact-button",
 ) as HTMLButtonElement;
 
+phoneInput.addEventListener("input", (e: Event) => {
+  const target = e.target as HTMLInputElement;
+
+  let rawValue = target.value.replace(/\D/g, "");
+
+  if (!rawValue.startsWith("7")) {
+    rawValue = "7" + rawValue;
+  }
+
+  let x = rawValue.match(/(\d{1})(\d{0,3})(\d{0,3})(\d{0,4})/);
+
+  if (x) {
+    target.value =
+      "+7" +
+      (x[2] ? " (" + x[2] + ") " : "") +
+      (x[3] ? x[3] : "") +
+      (x[4] ? "-" + x[4] : "");
+  }
+});
+
+const popup = ({
+  type,
+  message,
+}: {
+  type: "success" | "error";
+  message: string;
+}) => {
+  const container = document.querySelector(".notifications")!;
+  const template =
+    document.querySelector<HTMLTemplateElement>("#notification")!;
+  const element = template.content.firstElementChild!.cloneNode(
+    true,
+  ) as HTMLElement;
+
+  element.querySelector(".notification__status")!.textContent = {
+    success: "Успех!",
+    error: "Ошибка!",
+  }[type];
+  element.querySelector(".notification__reason")!.textContent = message;
+
+  element
+    .querySelector(".notification__close")!
+    .addEventListener("click", () => {
+      element.remove();
+    });
+
+  setTimeout(() => {
+    element.remove();
+  }, 5000);
+
+  container.append(element);
+};
+
 formButton.addEventListener("click", async (e) => {
+  e.preventDefault();
+
   const data = {
     name: nameInput.value || null,
     phone: phoneInput.value || null,
-    mail: mailInput.value || null,
+    time: timeInput.value || null,
   };
 
-  e.preventDefault();
-  if (!nameInput.value || !phoneInput.value || !mailInput.value)
-    console.log("nope");
-  else
+  const nameSchema = z.string().max(32);
+  const phoneSchema = z.string().length(17);
+
+  const nameResult = nameSchema.safeParse(data.name);
+  const phoneResult = phoneSchema.safeParse(data.phone);
+
+  if (!data.name || !data.phone) {
+    popup({ type: "error", message: "Заполните все поля!" });
+    return;
+  }
+  if (!nameResult.success) {
+    popup({ type: "error", message: "Cлишком длинное имя!" });
+    return;
+  }
+  if (!phoneResult.success) {
+    popup({ type: "error", message: "Заполните номер полностью!" });
+    console.log(phoneInput.value);
+    return;
+  } else
     try {
       const response = await fetch("/api/send", {
         method: "POST",
@@ -70,13 +141,11 @@ formButton.addEventListener("click", async (e) => {
       const result = await response.json();
 
       if (result.success) {
-        console.log("kaif");
+        popup({ type: "success", message: "Заявка отправлена успешно!" });
       } else {
-        console.log("not kaif");
-        console.log(response);
+        popup({ type: "error", message: "Что-то пошло не так..." });
       }
     } catch (error) {
-      console.log("not kaif");
-      console.log(error, "d");
+      popup({ type: "error", message: "Что-то пошло не так..." });
     }
 });
