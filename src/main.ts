@@ -132,7 +132,6 @@ formButton.addEventListener("click", async (e) => {
   }
   if (!phoneResult.success) {
     popup({ type: "error", message: "Заполните номер полностью!" });
-    console.log(phoneInput.value);
     return;
   } else
     try {
@@ -144,6 +143,14 @@ formButton.addEventListener("click", async (e) => {
         body: JSON.stringify(data),
       });
       const result = await response.json();
+
+      if (response.status === 429) {
+        popup({
+          type: "error",
+          message: result.message,
+        });
+        return;
+      }
 
       if (result.success) {
         popup({ type: "success", message: "Заявка отправлена успешно!" });
