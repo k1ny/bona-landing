@@ -9,3 +9,6 @@
     display: flex;
     gap: 3rem;
 }
+header {
+    background-color: white;
+}

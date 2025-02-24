@@ -1,0 +1,191 @@
+.catalog {
+    padding-bottom: 3.5rem;
+}
+.catalog__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.card {
+    cursor: pointer;
+    height: 32.75rem;
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: rotate 500ms linear;
+    width: 24.375rem;
+    color: white;
+}
+
+.card.show {
+    rotate: y 180deg;
+}
+
+.front__content,
+.back__content {
+    backface-visibility: hidden;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    inset: 0;
+    padding: 1rem;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.back__content {
+    rotate: y 180deg;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:nth-child(1) .front__content {
+    background: url("/catalog__card-1-bg.png") no-repeat center/cover;
+}
+
+.card:nth-child(1) .back__content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    filter: blur(10px);
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("/catalog__card-1-bg.png") no-repeat center/cover;
+    z-index: -1;
+}
+
+.card:nth-child(2) .front__content {
+    background: url("/catalog__card-2-bg.png") no-repeat center/cover;
+}
+
+.card:nth-child(2) .back__content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    filter: blur(10px);
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("/catalog__card-2-bg.png") no-repeat center/cover;
+    z-index: -1;
+}
+
+.card:nth-child(3) .front__content {
+    background: url("/catalog__card-3-bg.png") no-repeat center/cover;
+}
+
+.card:nth-child(3) .back__content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    filter: blur(10px);
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("/catalog__card-3-bg.png") no-repeat center/cover;
+    z-index: -1;
+}
+
+.card:nth-child(4) .front__content {
+    background: url("/catalog__card-4-bg.png") no-repeat center/cover;
+}
+
+.card:nth-child(4) .back__content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    filter: blur(10px);
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("/catalog__card-4-bg.png") no-repeat center/cover;
+    z-index: -1;
+}
+
+.card:nth-child(5) .front__content {
+    background: url("/catalog__card-1-bg.png") no-repeat center/cover;
+}
+
+.card:nth-child(5) .back__content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    filter: blur(10px);
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("/catalog__card-1-bg.png") no-repeat center/cover;
+    z-index: -1;
+}
+
+.front__content-brief {
+    display: flex;
+    justify-content: space-between;
+}
+.front__content-brief__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.front__content-brief__item {
+    display: flex;
+    gap: 0.25rem;
+}
+.front__content-brief__item img {
+    color: white;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.catalog__card-title {
+    font-size: 2.25rem;
+}
+.catalog__card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.modal__button {
+    border: none;
+    background: none;
+}
+
+.back__content-img {
+    height: 10rem;
+    width: 18rem;
+    border-radius: 1.25rem;
+}
+
+.back__content-brief p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    text-align: center;
+}
+.back__content-brief {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    justify-content: center;
+}
+.back__content-complectation ul {
+    font-size: 0.2;
+    font-weight: 200;
+}
+.modal__button-container {
+    display: flex;
+    justify-content: end;
+}
+
+.modal__button-container button {
+    rotate: 45deg;
+    cursor: pointer;
+}
+
+.back__content-complectation {
+    display: flex;
+    flex-direction: column;
+}
+.white__cross {
+    background-color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    -webkit-mask: url("/cross.svg") no-repeat center;
+    mask: url("/cross.svg") no-repeat center;
+}

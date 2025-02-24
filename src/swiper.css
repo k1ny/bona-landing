@@ -1,0 +1,45 @@
+.swiper {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.swiper * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.swiper .swiper__container {
+    cursor: grab;
+    touch-action: pan-y;
+    display: flex;
+    width: 100%;
+}
+
+.swiper .swiper__slide {
+    /* min_width = 100% / cards_to_view - gap / cards_to_view * (cards_to_view - 1) */
+    min-width: calc(100% / 2 - 24px / 2 * 1);
+}
+
+.swiper .swiper__indicator-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.swiper .swiper__indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: grey;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.swiper .swiper__indicator[data-active] {
+    background-color: var(--color-green);
+}

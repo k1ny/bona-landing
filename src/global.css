@@ -4,6 +4,12 @@
 @import url("./services.css");
 @import url("./statistic.css");
 @import url("./notifications.css");
+@import url("./swiper.css");
+@import url("./catalog.css");
+@import url("./reviews.css");
+@import url("./faq.css");
+@import url("./contacts.css");
+@import url("./footer.css");
 
 * {
     margin: 0;
@@ -15,6 +21,8 @@
     --container-width: 64.5rem;
     --color-grey: #cecece;
     --color-green: #67aa4f;
+    --color-grey: #f5f5f5;
+    --color-dark-grey: #303030;
 }
 
 html {
@@ -40,6 +48,10 @@ h2 {
 }
 p {
     font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .container {
@@ -76,4 +88,12 @@ p {
 
 .button_resize:hover {
     scale: 1.04;
+}
+
+ol {
+    list-style: none;
+}
+
+img {
+    pointer-events: none;
 }

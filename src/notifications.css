@@ -32,5 +32,6 @@
     right: 1rem;
 }
 .cross {
+    color: black;
     transform: rotate(45deg);
 }

@@ -1,4 +1,9 @@
 import { z } from "zod";
+import { Cursor } from "./common/cursor";
+import { Pointer } from "./common/pointer";
+import { Screen } from "./common/screen";
+import { Touch } from "./common/touch";
+import { Swiper } from "./common/swiper";
 
 const number = document.querySelectorAll(".statistic__item-number");
 const observer = new IntersectionObserver((entries) => {
@@ -148,4 +153,56 @@ formButton.addEventListener("click", async (e) => {
     } catch (error) {
       popup({ type: "error", message: "Что-то пошло не так..." });
     }
+});
+
+function createSwipers(pointer: Pointer, screen: Screen) {
+  const swipers: Swiper[] = [];
+
+  document.querySelectorAll<HTMLElement>(".swiper").forEach((root) => {
+    swipers.push(new Swiper(root, pointer, screen, { gap: "24px" }));
+  });
+
+  return swipers;
+}
+
+const IS_TOUCH_SUPPORTED = Boolean(
+  "ontouchstart" in window || window.navigator.maxTouchPoints,
+);
+
+const pointer = IS_TOUCH_SUPPORTED ? new Touch() : new Cursor();
+const screen = new Screen();
+
+createSwipers(pointer, screen);
+
+const flippers = document.querySelectorAll(".modal__button");
+
+flippers.forEach(function (flipper) {
+  flipper.addEventListener("click", function () {
+    const card = flipper.closest(".card"); // Находим ближайшую карточку
+    card?.classList.toggle("show"); // Переворачиваем только её
+  });
+});
+
+document.querySelectorAll(".faq__item").forEach((el) => {
+  el.addEventListener("click", () => {
+    const content = el.querySelector(".accordion__description") as HTMLElement;
+    const height = content.style.maxHeight;
+    const plusIcon = el.querySelector(".acordion__button") as HTMLElement;
+
+    document.querySelectorAll(".acordion__button-icon").forEach((icon) => {
+      if (icon !== plusIcon) {
+        icon.classList.remove("rotated");
+      }
+    });
+
+    document
+      .querySelectorAll(".accordion__description")
+      .forEach((contentEl) => {
+        const elContent = contentEl as HTMLElement;
+        elContent.style.maxHeight = "";
+      });
+
+    plusIcon.classList.toggle("rotated");
+    content.style.maxHeight = !height ? `${content.scrollHeight}px` : "";
+  });
 });
