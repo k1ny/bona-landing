@@ -163,6 +163,8 @@ formButton.addEventListener("click", async (e) => {
 
       if (result.success) {
         popup({ type: "success", message: "Заявка отправлена успешно!" });
+        nameInput.value = "";
+        phoneInput.value = "";
       } else {
         popup({ type: "error", message: "Что-то пошло не так..." });
       }
