@@ -9,6 +9,23 @@
     display: flex;
     gap: 3rem;
 }
-header {
-    background-color: white;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    transition:
+        background 0.4s ease-in-out,
+        backdrop-filter 0.4s ease-in-out;
+    padding: 0.25rem 0;
+    z-index: 1000;
+}
+
+.header.scrolled {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+}
+.logo__container {
+    width: 10.25rem;
 }

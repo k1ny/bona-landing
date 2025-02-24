@@ -5,6 +5,15 @@ import { Screen } from "./common/screen";
 import { Touch } from "./common/touch";
 import { Swiper } from "./common/swiper";
 
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".header") as HTMLElement;
+  if (window.scrollY > 60) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
 const number = document.querySelectorAll(".statistic__item-number");
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

@@ -14,20 +14,21 @@
         <title>Vite + TS</title>
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="container header__content">
-                <img src="/logo.svg" alt="logo" />
+                <div class="logo__container"> <img src="/logo.svg" alt="logo" /></div>
+
 
                 <nav class="navigation">
-                    <a href="#">Услуги</a>
-                    <a href="#">Работы</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Отзывы</a>
-                    <a href="#">Контакты</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#catalog">Работы</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#contacts">Контакты</a>
                 </nav>
 
                 <a
-                    href="#"
+                    href="#feedback"
                     class="header__content-order button_resize button button_outline_black"
                 >
                     Заказать звонок
@@ -45,7 +46,7 @@
 
                     <div class="hero__list">
                         <div class="hero__item">
-                            <img src="/heart.svg" />
+                            <img src="/heart.svg" alt="heart"/>
                             <p>
                                 Поддержка на всех этапах строительства, от
                                 проектирования до сдачи дома под ключ.
@@ -53,7 +54,7 @@
                         </div>
 
                         <div class="hero__item">
-                            <img src="/shield.svg" />
+                            <img src="/shield.svg" alt="shield"/>
                             <p>
                                 Изготовление домов из клееного бруса,
                                 соответствующих современным стандартам
@@ -62,7 +63,7 @@
                         </div>
 
                         <div class="hero__item">
-                            <img src="/money.svg" />
+                            <img src="/money.svg" alt="money"/>
                             <p>
                                 Оптимизация затрат и сроков строительства без
                                 потери качества и экологичности.
@@ -71,13 +72,13 @@
                     </div>
 
                     <div class="hero__options">
-                        <a href="#" class="button button_primary button_size-l">
+                        <a href="#feedback" class="button button_primary button_size-l">
                             Получить консультацию
                         </a>
 
                         <a
-                            href="#"
-                            class="button button_size-l button_outline_white"
+                            href="#feedback"
+                            class="button button_size-l button_outline_white button_resize"
                         >
                             Рассчитать стоимость
                         </a>
@@ -85,7 +86,7 @@
                 </div>
             </section>
 
-            <section class="services">
+            <section class="services" id="services">
                 <div class="container">
                     <h2>Наши услуги</h2>
                     <div class="services__list">
@@ -103,7 +104,7 @@
                                             от 85.000₽ м3
                                         </p>
                                         <a
-                                            href="#consultation-section"
+                                            href="#feedback"
                                             class="button button_primary"
                                         >
                                             Получить консультацию
@@ -127,7 +128,7 @@
                                             от 3.500₽ м2
                                         </p>
                                         <a
-                                            href="#consultation-section"
+                                            href="#feedback"
                                             class="button button_primary"
                                         >
                                             Получить консультацию
@@ -149,7 +150,7 @@
                                     <div class="service__footer">
                                         <p class="service__price">Договорная</p>
                                         <a
-                                            href="#consultation-section"
+                                            href="#feedback"
                                             class="button button_primary"
                                         >
                                             Получить консультацию
@@ -192,7 +193,7 @@
                 </div>
             </section>
 
-            <section class="feedback">
+            <section class="feedback" id="feedback">
                 <div class="container">
                     <div class="feedback__content">
                         <h2 class="feedback__content-title">
@@ -245,7 +246,7 @@
                 </div>
             </section>
 
-            <section class="catalog">
+            <section class="catalog" id="catalog">
                 <div class="container">
                     <div class="catalog__content">
                         <h2>Наши работы</h2>
@@ -266,14 +267,14 @@
                                                     class="front__content-brief__item"
                                                 >
                                                     <p>123 м2</p>
-                                                    <img src="/square.svg" />
+                                                    <img src="/square.svg" alt="square"/>
                                                 </div>
 
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
                                                     <p>8 комнат</p>
-                                                    <img src="/bed.svg" />
+                                                    <img src="/bed.svg" alt="bed"/>
                                                 </div>
                                             </div>
 
@@ -281,7 +282,7 @@
                                                 class="front__content-brief__item"
                                             >
                                                 <p>от 2 мес</p>
-                                                <img src="/time.svg" />
+                                                <img src="/time.svg" alt="time"/>
                                             </div>
                                         </div>
 
@@ -292,7 +293,7 @@
                                             <button
                                                 class="button modal__button"
                                             >
-                                                <img src="/link.svg" />
+                                                <img src="/link.svg" alt="link"/>
                                             </button>
                                         </div>
                                     </div>
@@ -337,6 +338,7 @@
                                                 <img
                                                     class="back__content-img"
                                                     src="/catalog__card-1.png"
+                                                    alt="background"
                                                 />
                                             </div>
                                         </div>
@@ -353,14 +355,14 @@
                                                     class="front__content-brief__item"
                                                 >
                                                     <p>44 м2</p>
-                                                    <img src="/square.svg" />
+                                                    <img src="/square.svg" alt="square"/>
                                                 </div>
 
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
                                                     <p>6 комнат</p>
-                                                    <img src="/bed.svg" />
+                                                    <img src="/bed.svg" alt="bed"/>
                                                 </div>
                                             </div>
 
@@ -368,7 +370,7 @@
                                                 class="front__content-brief__item"
                                             >
                                                 <p>от 2 мес</p>
-                                                <img src="/time.svg" />
+                                                <img src="/time.svg" alt="time"/>
                                             </div>
                                         </div>
 
@@ -379,7 +381,7 @@
                                             <button
                                                 class="button modal__button"
                                             >
-                                                <img src="/link.svg" />
+                                                <img src="/link.svg" alt="link"/>
                                             </button>
                                         </div>
                                     </div>
@@ -421,6 +423,7 @@
                                                 <img
                                                     class="back__content-img"
                                                     src="/catalog__card-2.png"
+                                                    alt="background"
                                                 />
                                             </div>
                                         </div>
@@ -437,14 +440,14 @@
                                                     class="front__content-brief__item"
                                                 >
                                                     <p>144 м2</p>
-                                                    <img src="/square.svg" />
+                                                    <img src="/square.svg" alt="square"/>
                                                 </div>
 
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
                                                     <p>11 комнат</p>
-                                                    <img src="/bed.svg" />
+                                                    <img src="/bed.svg" alt="bed"/>
                                                 </div>
                                             </div>
 
@@ -452,7 +455,7 @@
                                                 class="front__content-brief__item"
                                             >
                                                 <p>от 2 мес</p>
-                                                <img src="/time.svg" />
+                                                <img src="/time.svg" alt="time"/>
                                             </div>
                                         </div>
 
@@ -463,7 +466,7 @@
                                             <button
                                                 class="button modal__button"
                                             >
-                                                <img src="/link.svg" />
+                                                <img src="/link.svg" alt="link"/>
                                             </button>
                                         </div>
                                     </div>
@@ -508,6 +511,7 @@
                                                 <img
                                                     class="back__content-img"
                                                     src="/catalog__card-1.png"
+                                                    alt="background"
                                                 />
                                             </div>
                                         </div>
@@ -524,14 +528,14 @@
                                                     class="front__content-brief__item"
                                                 >
                                                     <p>123 м2</p>
-                                                    <img src="/square.svg" />
+                                                    <img src="/square.svg" alt="square"/>
                                                 </div>
 
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
                                                     <p>8 комнат</p>
-                                                    <img src="/bed.svg" />
+                                                    <img src="/bed.svg" alt="bed"/>
                                                 </div>
                                             </div>
 
@@ -539,7 +543,7 @@
                                                 class="front__content-brief__item"
                                             >
                                                 <p>от 2 мес</p>
-                                                <img src="/time.svg" />
+                                                <img src="/time.svg" alt="time"/>
                                             </div>
                                         </div>
 
@@ -550,7 +554,7 @@
                                             <button
                                                 class="button modal__button"
                                             >
-                                                <img src="/link.svg" />
+                                                <img src="/link.svg" alt="link"/>
                                             </button>
                                         </div>
                                     </div>
@@ -595,6 +599,7 @@
                                                 <img
                                                     class="back__content-img"
                                                     src="/catalog__card-1.png"
+                                                    alt="background"
                                                 />
                                             </div>
                                         </div>
@@ -611,14 +616,14 @@
                                                     class="front__content-brief__item"
                                                 >
                                                     <p>123 м2</p>
-                                                    <img src="/square.svg" />
+                                                    <img src="/square.svg" alt="square"/>
                                                 </div>
 
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
                                                     <p>8 комнат</p>
-                                                    <img src="/bed.svg" />
+                                                    <img src="/bed.svg" alt="bed"/>
                                                 </div>
                                             </div>
 
@@ -626,7 +631,7 @@
                                                 class="front__content-brief__item"
                                             >
                                                 <p>от 2 мес</p>
-                                                <img src="/time.svg" />
+                                                <img src="/time.svg" alt="time"/>
                                             </div>
                                         </div>
 
@@ -637,7 +642,7 @@
                                             <button
                                                 class="button modal__button"
                                             >
-                                                <img src="/link.svg" />
+                                                <img src="/link.svg" alt="link"/>
                                             </button>
                                         </div>
                                     </div>
@@ -682,6 +687,7 @@
                                                 <img
                                                     class="back__content-img"
                                                     src="/catalog__card-1.png"
+                                                    alt="background"
                                                 />
                                             </div>
                                         </div>
@@ -693,7 +699,7 @@
                 </div>
             </section>
 
-            <section class="reviews">
+            <section class="reviews" id="reviews">
                 <div class="container">
                     <h2>Отзывы</h2>
                     <div
@@ -706,12 +712,12 @@
                             <div class="review__group">
                                 <div class="review__card">
                                     <div class="review__title">
-                                        <img src="/review-2.png" class="review__card-avatar"/>
+                                        <img src="/review-2.png" class="review__card-avatar" alt="avatar"/>
                                         <div class="review__title-content">
                                             <p class="review__title-name">Юрий Николаевич</p>
                                             <div class="review__title-stars">
-                                                <img src="/star.svg"/>
-                                                <img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/>
+                                                <img src="/star.svg" alt="star"/>
+                                                <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/>
                                             </div>
                                         </div>
                                     </div>
@@ -722,12 +728,12 @@
 
                                 <div class="review__card">
                                 <div class="review__title">
-                                    <img src="/review-3.png" class="review__card-avatar"/>
+                                    <img src="/review-3.png" class="review__card-avatar" alt="avatar"/>
                                     <div class="review__title-content">
                                         <p class="review__title-name">Misha098</p>
                                         <div class="review__title-stars">
-                                            <img src="/star.svg"/>
-                                            <img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/>
+                                            <img src="/star.svg" alt="star"/>
+                                            <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/>
                                         </div>
                                     </div>
                                 </div>
@@ -740,12 +746,12 @@
                             <div class="review__group">
                                 <div class="review__card">
                                     <div class="review__title">
-                                        <img src="/review-4.png" class="review__card-avatar"/>
+                                        <img src="/review-4.png" class="review__card-avatar" alt="avatar"/>
                                         <div class="review__title-content">
                                             <p class="review__title-name">Оксана Иванова</p>
                                             <div class="review__title-stars">
-                                                <img src="/star.svg"/>
-                                                <img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/>
+                                                <img src="/star.svg" alt="star"/>
+                                                <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/>
                                             </div>
                                         </div>
                                     </div>
@@ -756,12 +762,12 @@
 
                                 <div class="review__card">
                                 <div class="review__title">
-                                    <img src="/review-1.png" class="review__card-avatar"/>
+                                    <img src="/review-1.png" class="review__card-avatar" alt="avatar"/>
                                     <div class="review__title-content">
                                         <p class="review__title-name">Levashov M.</p>
                                         <div class="review__title-stars">
-                                            <img src="/star.svg"/>
-                                            <img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/>
+                                            <img src="/star.svg" alt="star"/>
+                                            <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img alt="star" src="/star.svg"/><img src="/star.svg" alt="star"/>
                                         </div>
                                     </div>
                                 </div>
@@ -777,12 +783,12 @@
                         <div class="review__group">
                             <div class="review__card">
                                 <div class="review__title">
-                                    <img src="/review-6.png" class="review__card-avatar"/>
+                                    <img src="/review-6.png" class="review__card-avatar" alt="avatar"/>
                                     <div class="review__title-content">
                                         <p class="review__title-name">Anutka_1979</p>
                                         <div class="review__title-stars">
-                                            <img src="/star.svg"/>
-                                            <img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/>
+                                            <img src="/star.svg" alt="star"/>
+                                            <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/>
                                         </div>
                                     </div>
                                 </div>
@@ -793,12 +799,12 @@
 
                             <div class="review__card">
                             <div class="review__title">
-                                <img src="/review-5.png" class="review__card-avatar"/>
+                                <img src="/review-5.png" class="review__card-avatar" alt="avatar"/>
                                 <div class="review__title-content">
                                     <p class="review__title-name">Рустам Х.</p>
                                     <div class="review__title-stars">
-                                        <img src="/star.svg"/>
-                                        <img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/><img src="/star.svg"/>
+                                        <img src="/star.svg" alt="star"/>
+                                        <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/>
                                     </div>
                                 </div>
                             </div>
@@ -814,7 +820,7 @@
                 </div>
             </section>
 
-            <section class="faq">
+            <section class="faq" id="faq">
                 <div class="container">
                     <h2>FAQ</h2>
                     <div class="faq__list">
@@ -901,14 +907,14 @@
                 </div>
             </section>
 
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <div class="container contacts__container">
                     <div class="contacts__content">
                         <h3>Обратитесь к нам любым удобным способом</h3>
                         <div class="contacts__list">
                             <div class="contact__item">
                                 <div class="contact__item-title">
-                                    <img src="/phone.svg"/>
+                                    <img src="/phone.svg" alt="phone"/>
                                     <p>Позвонить по телефону</p>
                                 </div>
                                 <p class="contact__item-description">+7 911 087 55 58</p>
@@ -916,7 +922,7 @@
 
                             <div class="contact__item">
                                 <div class="contact__item-title">
-                                    <img src="/mail.svg"/>
+                                    <img src="/mail.svg" alt="mail"/>
                                     <p>Написать на почту</p>
                                 </div>
                                 <p class="contact__item-description">pskbona@mail.ru</p>
@@ -924,14 +930,14 @@
 
                             <div class="contact__item">
                                 <div class="contact__item-title">
-                                    <img src="/location.svg"/>
+                                    <img src="/location.svg" alt="location"/>
                                     <p>Приехать в офис</p>
                                 </div>
                                 <p class="contact__item-description">Санкт-Петербург, Выборгская ул., 8 этаж 2, офис 205</p>
                             </div>
 
                         </div>
-                        <div><a class="button button_primary" href="#">Оставить заявку</a></div>
+                        <div><a class="button button_primary" href="#feedback">Оставить заявку</a></div>
                     </div>
 
                     <div class="iframe__wrapper">
@@ -949,7 +955,7 @@
                     <strong class="notification__status"></strong>
                     <p class="notification__reason"></p>
                     <button class="notification__close">
-                        <img src="/public/cross.svg" class="cross" />
+                        <img src="/public/cross.svg" class="cross" alt="cross"/>
                     </button>
                 </div>
             </template>
@@ -958,11 +964,11 @@
         <footer>
             <div class="container footer__content">
                 <div class="footer__top">
-                    <div class="footer__top-item"><img src="/logo-white.svg"/></div>
+                    <div class="footer__top-item"><img src="/logo-white.svg" alt="logo"/></div>
 
                     <div class="footer__top-item">
-                        <a><img src="/whatsapp.svg"/></a>
-                        <a><img src="/telegram.svg"/></a>
+                        <a><img src="/whatsapp.svg" alt="whatsapp"/></a>
+                        <a><img src="/telegram.svg" alt="telegram"/></a>
                     </div>
 
                     <p class="footer__top-item">+7 911 087 55 58</p>

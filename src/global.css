@@ -23,12 +23,15 @@
     --color-green: #67aa4f;
     --color-grey: #f5f5f5;
     --color-dark-grey: #303030;
+    --color-dar-green: #50843d;
 }
 
 html {
     font-family: "Geologica";
     font-weight: 500;
     font-size: 1rem;
+
+    scroll-behavior: smooth;
 }
 
 a {
@@ -70,6 +73,11 @@ ul {
 
 .button_primary {
     background-color: var(--color-green);
+    color: white;
+}
+
+.button_primary:hover {
+    background-color: var(--color-dar-green);
     color: white;
 }
 
