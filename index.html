@@ -1,23 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
+        <title>Модульные дома из дерева Kela | BONA</title>
+
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicons/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicons/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="BONA" />
+        <link rel="manifest" href="/favicons/site.webmanifest" />
+
+        <meta property="og:title" content="BONA" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bonahouses.ru/" />
+        <meta property="og:image" content="https://bonahouses.ru/logo-og.png" />
+        <meta property="og:image:alt" content="Модульные дома из дерева Kela" />
+        <meta
+            property="og:description"
+            content="Модульные деревянные дома из дерева Kela."
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="BONA" />
+        <meta property="og:locale" content="ru_RU" />
+
+        <link rel="canonical" href="https://bonahouses.ru/" />
+
+        <meta
+            name="keywords"
+            content="модульные дома из дерева, модульные дома Kela, деревянные дома, модульные дома под ключ, дома из дерева Санкт-Петербург, модульные дома Санкт-Петербург, строительство модульных домов, экологичные дома, деревянное строительство, дома на дачу, дачные дома из дерева, модульные дома для постоянного проживания, проекты модульных домов, дома из бруса, экологически чистые дома, деревянные коттеджи, премиальные модульные дома, строительство домов в Санкт-Петербурге, дома из клееного бруса, каркасные дома, деревянные дома с террасой, модульные дома с мансардой, модульные дома с камином, деревянные бани, баня под ключ, строительство бань, модульные бани, снос сооружений, разборка зданий, снос домов, снос деревянных домов, разборка зданий Санкт-Петербург, услуги сноса, снос и разборка объектов недвижимости, деревянные дома спб, модульные дома спб, бани Санкт-Петербург, ленинградская область, дома из дерева ленинградская область, дома из дерева Ленинград"
+        />
+        <meta
+            name="description"
+            content="Компания BONA предлагает модульные дома из дерева Kela, строительство бань и снос/разбор сооружений в Санкт-Петербурге и Ленинградской области. Мы специализируемся на высококачественном строительстве деревянных домов и бань, а также предоставляем услуги по сносу старых построек. Все наши дома изготовлены из экологически чистых материалов и отличаются долговечностью и эстетическим видом."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+
         <link rel="stylesheet" href="/src/global.css" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
             rel="stylesheet"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite + TS</title>
     </head>
     <body>
         <header class="header">
             <div class="container header__content">
-                <div class="logo__container"> <img src="/logo.svg" alt="logo" /></div>
-
+                <div class="logo__container">
+                    <img src="/logo.svg" alt="logo" />
+                </div>
 
                 <nav class="navigation">
                     <a href="#services">Услуги</a>
@@ -37,34 +80,50 @@
         </header>
 
         <main>
-            <section class="hero">
+            <section
+                class="hero"
+                itemscope
+                itemtype="https://schema.org/WebPage"
+            >
                 <div class="container">
-                    <h1>
+                    <h1 itemprop="name">
                         Производство модульных домов из дерева Кела в
                         Санкт-Петербурге
                     </h1>
 
                     <div class="hero__list">
-                        <div class="hero__item">
-                            <img src="/heart.svg" alt="heart"/>
-                            <p>
+                        <div
+                            class="hero__item"
+                            itemscope
+                            itemtype="https://schema.org/Service"
+                        >
+                            <img src="/heart.svg" alt="heart" />
+                            <p itemprop="description">
                                 Поддержка на всех этапах строительства, от
                                 проектирования до сдачи дома под ключ.
                             </p>
                         </div>
 
-                        <div class="hero__item">
-                            <img src="/shield.svg" alt="shield"/>
-                            <p>
+                        <div
+                            class="hero__item"
+                            itemscope
+                            itemtype="https://schema.org/Service"
+                        >
+                            <img src="/shield.svg" alt="shield" />
+                            <p itemprop="description">
                                 Изготовление домов из клееного бруса,
                                 соответствующих современным стандартам
                                 надежности и комфорта.
                             </p>
                         </div>
 
-                        <div class="hero__item">
-                            <img src="/money.svg" alt="money"/>
-                            <p>
+                        <div
+                            class="hero__item"
+                            itemscope
+                            itemtype="https://schema.org/Service"
+                        >
+                            <img src="/money.svg" alt="money" />
+                            <p itemprop="description">
                                 Оптимизация затрат и сроков строительства без
                                 потери качества и экологичности.
                             </p>
@@ -72,37 +131,84 @@
                     </div>
 
                     <div class="hero__options">
-                        <a href="#feedback" class="button button_primary button_size-l">
+                        <a
+                            href="#feedback"
+                            class="button button_primary button_size-l"
+                            itemprop="potentialAction"
+                            itemscope
+                            itemtype="https://schema.org/Action"
+                        >
+                            <meta
+                                itemprop="actionStatus"
+                                content="https://schema.org/PotentialActionStatus"
+                            />
                             Получить консультацию
                         </a>
 
                         <a
                             href="#feedback"
                             class="button button_size-l button_outline_white button_resize"
+                            itemprop="potentialAction"
+                            itemscope
+                            itemtype="https://schema.org/Action"
                         >
+                            <meta
+                                itemprop="actionStatus"
+                                content="https://schema.org/PotentialActionStatus"
+                            />
                             Рассчитать стоимость
                         </a>
                     </div>
                 </div>
             </section>
 
-            <section class="services" id="services">
+            <section
+                class="services"
+                id="services"
+                itemscope
+                itemtype="https://schema.org/Service"
+            >
                 <div class="container">
                     <h2>Наши услуги</h2>
                     <div class="services__list">
-                        <div class="services__item">
+                        <div
+                            class="services__item"
+                            itemscope
+                            itemtype="https://schema.org/Service"
+                        >
                             <div class="services__item-content">
-                                <h3 class="service__title">
+                                <h3 class="service__title" itemprop="name">
                                     Производство готовых проектов
                                 </h3>
                                 <div class="service__details">
-                                    <p class="service__description">
-                                        Производство модульных деревянных домов Kela с полной заводской готовностью для быстрой и качественной сборки на участке.
+                                    <p
+                                        class="service__description"
+                                        itemprop="description"
+                                    >
+                                        Производство модульных деревянных домов
+                                        Kela с полной заводской готовностью для
+                                        быстрой и качественной сборки на
+                                        участке.
                                     </p>
                                     <div class="service__footer">
-                                        <p class="service__price">
-                                            от 85.000₽ м3
-                                        </p>
+                                        <div
+                                            itemprop="offers"
+                                            itemscope
+                                            itemtype="https://schema.org/Offer"
+                                        >
+                                            <p class="service__price">
+                                                <span
+                                                    itemprop="price"
+                                                    content="85000"
+                                                    >от 85.000<span
+                                                        itemprop="priceCurrency"
+                                                        content="RUB"
+                                                        >₽</span
+                                                    >
+                                                    м3</span
+                                                >
+                                            </p>
+                                        </div>
                                         <a
                                             href="#feedback"
                                             class="button button_primary"
@@ -114,19 +220,44 @@
                             </div>
                         </div>
 
-                        <div class="services__item">
+                        <div
+                            class="services__item"
+                            itemscope
+                            itemtype="https://schema.org/Service"
+                        >
                             <div class="services__item-content">
-                                <h3 class="service__title">
+                                <h3 class="service__title" itemprop="name">
                                     Разработка уникальных проектов
                                 </h3>
                                 <div class="service__details">
-                                    <p class="service__description">
-                                        Разработка индивидуальных проектов модульных домов Kela с учетом пожеланий клиента, особенностей участка и современных технологий.
+                                    <p
+                                        class="service__description"
+                                        itemprop="description"
+                                    >
+                                        Разработка индивидуальных проектов
+                                        модульных домов Kela с учетом пожеланий
+                                        клиента, особенностей участка и
+                                        современных технологий.
                                     </p>
                                     <div class="service__footer">
-                                        <p class="service__price">
-                                            от 3.500₽ м2
-                                        </p>
+                                        <div
+                                            itemprop="offers"
+                                            itemscope
+                                            itemtype="https://schema.org/Offer"
+                                        >
+                                            <p class="service__price">
+                                                <span
+                                                    itemprop="price"
+                                                    content="3500"
+                                                    >от 3.500<span
+                                                        itemprop="priceCurrency"
+                                                        content="RUB"
+                                                        >₽</span
+                                                    >
+                                                    м2</span
+                                                >
+                                            </p>
+                                        </div>
                                         <a
                                             href="#feedback"
                                             class="button button_primary"
@@ -138,17 +269,43 @@
                             </div>
                         </div>
 
-                        <div class="services__item">
+                        <div
+                            class="services__item"
+                            itemscope
+                            itemtype="https://schema.org/Service"
+                        >
                             <div class="services__item-content">
-                                <h3 class="service__title">
+                                <h3 class="service__title" itemprop="name">
                                     Демонтажно-разборочные работы
                                 </h3>
                                 <div class="service__details">
-                                    <p class="service__description">
-                                        Проведение демонтажно-разборочных работ любой сложности с учетом техники безопасности и утилизации строительных материалов.
+                                    <p
+                                        class="service__description"
+                                        itemprop="description"
+                                    >
+                                        Проведение демонтажно-разборочных работ
+                                        любой сложности с учетом техники
+                                        безопасности и утилизации строительных
+                                        материалов.
                                     </p>
                                     <div class="service__footer">
-                                        <p class="service__price">Договорная</p>
+                                        <div
+                                            itemprop="offers"
+                                            itemscope
+                                            itemtype="https://schema.org/Offer"
+                                        >
+                                            <p class="service__price">
+                                                <span
+                                                    itemprop="priceCurrency"
+                                                    content="RUB"
+                                                ></span>
+                                                <span
+                                                    itemprop="price"
+                                                    content="0"
+                                                    >Договорная</span
+                                                >
+                                            </p>
+                                        </div>
                                         <a
                                             href="#feedback"
                                             class="button button_primary"
@@ -193,7 +350,12 @@
                 </div>
             </section>
 
-            <section class="feedback" id="feedback">
+            <section
+                class="feedback"
+                id="feedback"
+                itemscope
+                itemtype="https://schema.org/ContactPage"
+            >
                 <div class="container">
                     <div class="feedback__content">
                         <h2 class="feedback__content-title">
@@ -205,10 +367,28 @@
                             <strong class="feedback__content-question"
                                 >В какое время с вами удобно связаться?</strong
                             >
-                            <form class="feedback__form">
-                                <select id="time">
-                                    <option value="Сейчас">Сейчас</option>
+                            <form
+                                class="feedback__form"
+                                itemprop="mainEntity"
+                                itemscope
+                                itemtype="https://schema.org/ContactPoint"
+                            >
+                                <meta
+                                    itemprop="contactType"
+                                    content="Customer Service"
+                                />
+                                <meta
+                                    itemprop="telephone"
+                                    content="+7-XXX-XXX-XX-XX"
+                                />
+                                <meta itemprop="areaServed" content="RU" />
 
+                                <select
+                                    id="time"
+                                    itemprop="name"
+                                    content="Время связи"
+                                >
+                                    <option value="Сейчас">Сейчас</option>
                                     <option value="В течении часа">
                                         В течении часа
                                     </option>
@@ -225,6 +405,7 @@
                                     name="name"
                                     autocomplete="name"
                                     class="input"
+                                    itemprop="name"
                                 />
                                 <input
                                     placeholder="Ваш номер телефона"
@@ -233,10 +414,14 @@
                                     type="tel"
                                     autocomplete="tel"
                                     class="input phone-mask"
+                                    itemprop="telephone"
                                 />
                                 <button
                                     class="contact-button button button_primary"
                                     type="submit"
+                                    itemprop="potentialAction"
+                                    itemscope
+                                    itemtype="https://schema.org/Action"
                                 >
                                     Пререзвоните мне
                                 </button>
@@ -257,7 +442,17 @@
                             data-slides-per-view-lg="3"
                         >
                             <div class="swiper__container">
-                                <div class="card catalog__card">
+                                <div
+                                    class="card catalog__card"
+                                    itemscope
+                                    itemtype="https://schema.org/Product"
+                                >
+                                    <meta itemprop="name" content="Жилой дом" />
+                                    <meta
+                                        itemprop="category"
+                                        content="Модульные дома"
+                                    />
+
                                     <div class="front__content">
                                         <div class="front__content-brief">
                                             <div
@@ -266,34 +461,101 @@
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
-                                                    <p>123 м2</p>
-                                                    <img src="/square.svg" alt="square"/>
+                                                    <p>
+                                                        <span
+                                                            itemprop="additionalProperty"
+                                                            itemscope
+                                                            itemtype="https://schema.org/PropertyValue"
+                                                        >
+                                                            <meta
+                                                                itemprop="name"
+                                                                content="Площадь"
+                                                            />
+                                                            <meta
+                                                                itemprop="value"
+                                                                content="123"
+                                                            />
+                                                            <meta
+                                                                itemprop="unitCode"
+                                                                content="MTK"
+                                                            />
+                                                            123 м²
+                                                        </span>
+                                                    </p>
+                                                    <img
+                                                        src="/square.svg"
+                                                        alt="square"
+                                                    />
                                                 </div>
 
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
-                                                    <p>8 комнат</p>
-                                                    <img src="/bed.svg" alt="bed"/>
+                                                    <p>
+                                                        <span
+                                                            itemprop="additionalProperty"
+                                                            itemscope
+                                                            itemtype="https://schema.org/PropertyValue"
+                                                        >
+                                                            <meta
+                                                                itemprop="name"
+                                                                content="Количество комнат"
+                                                            />
+                                                            <meta
+                                                                itemprop="value"
+                                                                content="8"
+                                                            />
+                                                            8 комнат
+                                                        </span>
+                                                    </p>
+                                                    <img
+                                                        src="/bed.svg"
+                                                        alt="bed"
+                                                    />
                                                 </div>
                                             </div>
 
                                             <div
                                                 class="front__content-brief__item"
                                             >
-                                                <p>от 2 мес</p>
-                                                <img src="/time.svg" alt="time"/>
+                                                <p>
+                                                    <span
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Срок строительства"
+                                                        />
+                                                        <meta
+                                                            itemprop="value"
+                                                            content="от 2 мес"
+                                                        />
+                                                        от 2 мес
+                                                    </span>
+                                                </p>
+                                                <img
+                                                    src="/time.svg"
+                                                    alt="time"
+                                                />
                                             </div>
                                         </div>
 
                                         <div class="catalog__card-footer">
-                                            <h3 class="catalog__card-title">
+                                            <h3
+                                                class="catalog__card-title"
+                                                itemprop="name"
+                                            >
                                                 Жилой дом
                                             </h3>
                                             <button
                                                 class="button modal__button"
                                             >
-                                                <img src="/link.svg" alt="link"/>
+                                                <img
+                                                    src="/link.svg"
+                                                    alt="link"
+                                                />
                                             </button>
                                         </div>
                                     </div>
@@ -309,8 +571,8 @@
                                                     ></div>
                                                 </button>
                                             </div>
-                                            <p>
-                                                Модульный деревянный дом 163 м²
+                                            <p itemprop="description">
+                                                Модульный деревянный дом 123 м²
                                                 – стильный и комфортный дом,
                                                 выполненный в современном стиле
                                                 с использованием
@@ -321,31 +583,107 @@
                                                 удобство и комфорт для всей
                                                 семьи.
                                             </p>
+
                                             <div
                                                 class="back__content-complectation"
                                             >
                                                 <h3>Комплектация</h3>
                                                 <ul>
-                                                    <li>Прихожая</li>
-                                                    <li>Котельная</li>
-                                                    <li>Холл</li>
-                                                    <li>2x Спальня</li>
-                                                    <li>Санузел</li>
-                                                    <li>Гостинная кухня</li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Прихожая"
+                                                        />
+                                                        <span>Прихожая</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Котельная"
+                                                        />
+                                                        <span>Котельная</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Холл"
+                                                        />
+                                                        <span>Холл</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="2x Спальня"
+                                                        />
+                                                        <span>2x Спальня</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Санузел"
+                                                        />
+                                                        <span>Санузел</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Гостиная кухня"
+                                                        />
+                                                        <span
+                                                            >Гостиная
+                                                            кухня</span
+                                                        >
+                                                    </li>
                                                 </ul>
                                             </div>
+
                                             <div>
                                                 <img
                                                     class="back__content-img"
                                                     src="/catalog__card-1.png"
                                                     alt="background"
+                                                    itemprop="image"
                                                 />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="card catalog__card">
+                                <div
+                                    class="card catalog__card"
+                                    itemscope
+                                    itemtype="https://schema.org/Product"
+                                >
+                                    <meta itemprop="name" content="Баня 10×8" />
+                                    <meta
+                                        itemprop="category"
+                                        content="Модульные бани"
+                                    />
+
                                     <div class="front__content">
                                         <div class="front__content-brief">
                                             <div
@@ -354,34 +692,101 @@
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
-                                                    <p>44 м2</p>
-                                                    <img src="/square.svg" alt="square"/>
+                                                    <p>
+                                                        <span
+                                                            itemprop="additionalProperty"
+                                                            itemscope
+                                                            itemtype="https://schema.org/PropertyValue"
+                                                        >
+                                                            <meta
+                                                                itemprop="name"
+                                                                content="Площадь"
+                                                            />
+                                                            <meta
+                                                                itemprop="value"
+                                                                content="44"
+                                                            />
+                                                            <meta
+                                                                itemprop="unitCode"
+                                                                content="MTK"
+                                                            />
+                                                            44 м²
+                                                        </span>
+                                                    </p>
+                                                    <img
+                                                        src="/square.svg"
+                                                        alt="square"
+                                                    />
                                                 </div>
 
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
-                                                    <p>6 комнат</p>
-                                                    <img src="/bed.svg" alt="bed"/>
+                                                    <p>
+                                                        <span
+                                                            itemprop="additionalProperty"
+                                                            itemscope
+                                                            itemtype="https://schema.org/PropertyValue"
+                                                        >
+                                                            <meta
+                                                                itemprop="name"
+                                                                content="Количество комнат"
+                                                            />
+                                                            <meta
+                                                                itemprop="value"
+                                                                content="6"
+                                                            />
+                                                            6 комнат
+                                                        </span>
+                                                    </p>
+                                                    <img
+                                                        src="/bed.svg"
+                                                        alt="bed"
+                                                    />
                                                 </div>
                                             </div>
 
                                             <div
                                                 class="front__content-brief__item"
                                             >
-                                                <p>от 2 мес</p>
-                                                <img src="/time.svg" alt="time"/>
+                                                <p>
+                                                    <span
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Срок строительства"
+                                                        />
+                                                        <meta
+                                                            itemprop="value"
+                                                            content="от 2 мес"
+                                                        />
+                                                        от 2 мес
+                                                    </span>
+                                                </p>
+                                                <img
+                                                    src="/time.svg"
+                                                    alt="time"
+                                                />
                                             </div>
                                         </div>
 
                                         <div class="catalog__card-footer">
-                                            <h3 class="catalog__card-title">
-                                                Баня 10х8
+                                            <h3
+                                                class="catalog__card-title"
+                                                itemprop="name"
+                                            >
+                                                Баня 10×8
                                             </h3>
                                             <button
                                                 class="button modal__button"
                                             >
-                                                <img src="/link.svg" alt="link"/>
+                                                <img
+                                                    src="/link.svg"
+                                                    alt="link"
+                                                />
                                             </button>
                                         </div>
                                     </div>
@@ -397,7 +802,7 @@
                                                     ></div>
                                                 </button>
                                             </div>
-                                            <p>
+                                            <p itemprop="description">
                                                 Модульная деревянная кела-баня
                                                 8×10 м – просторная и уютная
                                                 баня в финском стиле. Выполнена
@@ -406,31 +811,107 @@
                                                 монтируется и отлично держит
                                                 тепло.
                                             </p>
+
                                             <div
                                                 class="back__content-complectation"
                                             >
                                                 <h3>Комплектация</h3>
                                                 <ul>
-                                                    <li>Прихожая</li>
-                                                    <li>Комната отдыха</li>
-                                                    <li>Санузел</li>
-                                                    <li>Парная</li>
-                                                    <li>Раздевалка</li>
-                                                    <li>Помывочная</li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Прихожая"
+                                                        />
+                                                        <span>Прихожая</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Комната отдыха"
+                                                        />
+                                                        <span
+                                                            >Комната
+                                                            отдыха</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Санузел"
+                                                        />
+                                                        <span>Санузел</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Парная"
+                                                        />
+                                                        <span>Парная</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Раздевалка"
+                                                        />
+                                                        <span>Раздевалка</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Помывочная"
+                                                        />
+                                                        <span>Помывочная</span>
+                                                    </li>
                                                 </ul>
                                             </div>
+
                                             <div>
                                                 <img
                                                     class="back__content-img"
                                                     src="/catalog__card-2.png"
                                                     alt="background"
+                                                    itemprop="image"
                                                 />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="card catalog__card">
+                                <div
+                                    class="card catalog__card"
+                                    itemscope
+                                    itemtype="https://schema.org/Product"
+                                >
+                                    <meta itemprop="name" content="Жилой дом" />
+                                    <meta
+                                        itemprop="category"
+                                        content="Модульные дома"
+                                    />
+
                                     <div class="front__content">
                                         <div class="front__content-brief">
                                             <div
@@ -439,34 +920,101 @@
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
-                                                    <p>144 м2</p>
-                                                    <img src="/square.svg" alt="square"/>
+                                                    <p>
+                                                        <span
+                                                            itemprop="additionalProperty"
+                                                            itemscope
+                                                            itemtype="https://schema.org/PropertyValue"
+                                                        >
+                                                            <meta
+                                                                itemprop="name"
+                                                                content="Площадь"
+                                                            />
+                                                            <meta
+                                                                itemprop="value"
+                                                                content="144"
+                                                            />
+                                                            <meta
+                                                                itemprop="unitCode"
+                                                                content="MTK"
+                                                            />
+                                                            144 м²
+                                                        </span>
+                                                    </p>
+                                                    <img
+                                                        src="/square.svg"
+                                                        alt="square"
+                                                    />
                                                 </div>
 
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
-                                                    <p>11 комнат</p>
-                                                    <img src="/bed.svg" alt="bed"/>
+                                                    <p>
+                                                        <span
+                                                            itemprop="additionalProperty"
+                                                            itemscope
+                                                            itemtype="https://schema.org/PropertyValue"
+                                                        >
+                                                            <meta
+                                                                itemprop="name"
+                                                                content="Количество комнат"
+                                                            />
+                                                            <meta
+                                                                itemprop="value"
+                                                                content="11"
+                                                            />
+                                                            11 комнат
+                                                        </span>
+                                                    </p>
+                                                    <img
+                                                        src="/bed.svg"
+                                                        alt="bed"
+                                                    />
                                                 </div>
                                             </div>
 
                                             <div
                                                 class="front__content-brief__item"
                                             >
-                                                <p>от 2 мес</p>
-                                                <img src="/time.svg" alt="time"/>
+                                                <p>
+                                                    <span
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Срок строительства"
+                                                        />
+                                                        <meta
+                                                            itemprop="value"
+                                                            content="от 2 мес"
+                                                        />
+                                                        от 2 мес
+                                                    </span>
+                                                </p>
+                                                <img
+                                                    src="/time.svg"
+                                                    alt="time"
+                                                />
                                             </div>
                                         </div>
 
                                         <div class="catalog__card-footer">
-                                            <h3 class="catalog__card-title">
+                                            <h3
+                                                class="catalog__card-title"
+                                                itemprop="name"
+                                            >
                                                 Жилой дом
                                             </h3>
                                             <button
                                                 class="button modal__button"
                                             >
-                                                <img src="/link.svg" alt="link"/>
+                                                <img
+                                                    src="/link.svg"
+                                                    alt="link"
+                                                />
                                             </button>
                                         </div>
                                     </div>
@@ -482,43 +1030,147 @@
                                                     ></div>
                                                 </button>
                                             </div>
-                                            <p>
+                                            <p itemprop="description">
                                                 Модульный деревянный дом 144 м²
                                                 – стильный и комфортный дом,
                                                 выполненный с использованием
                                                 высококачественного натурального
                                                 дерева Kela.
                                             </p>
+
                                             <div
                                                 class="back__content-complectation"
                                             >
                                                 <h3>Комплектация</h3>
                                                 <ul>
-                                                    <li>Прихожая</li>
-                                                    <li>Котельная</li>
-                                                    <li>Сауна</li>
-                                                    <li>Холл</li>
-                                                    <li>Гардероб</li>
-                                                    <li>
-                                                        Гостинная кухня-столовая
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Прихожая"
+                                                        />
+                                                        <span>Прихожая</span>
                                                     </li>
-                                                    <li>x3 Спальня</li>
-                                                    <li>Санузел</li>
-                                                    <li>Гостинная кухня</li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Котельная"
+                                                        />
+                                                        <span>Котельная</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Сауна"
+                                                        />
+                                                        <span>Сауна</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Холл"
+                                                        />
+                                                        <span>Холл</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Гардероб"
+                                                        />
+                                                        <span>Гардероб</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Гостиная кухня-столовая"
+                                                        />
+                                                        <span
+                                                            >Гостиная
+                                                            кухня-столовая</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Спальня"
+                                                        />
+                                                        <span>x3 Спальня</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Санузел"
+                                                        />
+                                                        <span>Санузел</span>
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Гостиная кухня"
+                                                        />
+                                                        <span
+                                                            >Гостиная
+                                                            кухня</span
+                                                        >
+                                                    </li>
                                                 </ul>
                                             </div>
+
                                             <div>
                                                 <img
                                                     class="back__content-img"
                                                     src="/catalog__card-1.png"
                                                     alt="background"
+                                                    itemprop="image"
                                                 />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="card catalog__card">
+                                <div
+                                    class="card catalog__card"
+                                    itemscope
+                                    itemtype="https://schema.org/Product"
+                                >
+                                    <meta itemprop="name" content="Жилой дом" />
+                                    <meta itemprop="category" content="Дом" />
+
                                     <div class="front__content">
                                         <div class="front__content-brief">
                                             <div
@@ -527,34 +1179,101 @@
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
-                                                    <p>123 м2</p>
-                                                    <img src="/square.svg" alt="square"/>
+                                                    <p>
+                                                        <span
+                                                            itemprop="additionalProperty"
+                                                            itemscope
+                                                            itemtype="https://schema.org/PropertyValue"
+                                                        >
+                                                            <meta
+                                                                itemprop="name"
+                                                                content="Площадь"
+                                                            />
+                                                            <meta
+                                                                itemprop="value"
+                                                                content="163"
+                                                            />
+                                                            <meta
+                                                                itemprop="unitCode"
+                                                                content="MTK"
+                                                            />
+                                                            163 м²
+                                                        </span>
+                                                    </p>
+                                                    <img
+                                                        src="/square.svg"
+                                                        alt="square"
+                                                    />
                                                 </div>
 
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
-                                                    <p>8 комнат</p>
-                                                    <img src="/bed.svg" alt="bed"/>
+                                                    <p>
+                                                        <span
+                                                            itemprop="additionalProperty"
+                                                            itemscope
+                                                            itemtype="https://schema.org/PropertyValue"
+                                                        >
+                                                            <meta
+                                                                itemprop="name"
+                                                                content="Количество комнат"
+                                                            />
+                                                            <meta
+                                                                itemprop="value"
+                                                                content="8"
+                                                            />
+                                                            8 комнат
+                                                        </span>
+                                                    </p>
+                                                    <img
+                                                        src="/bed.svg"
+                                                        alt="bed"
+                                                    />
                                                 </div>
                                             </div>
 
                                             <div
                                                 class="front__content-brief__item"
                                             >
-                                                <p>от 2 мес</p>
-                                                <img src="/time.svg" alt="time"/>
+                                                <p>
+                                                    <span
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Срок строительства"
+                                                        />
+                                                        <meta
+                                                            itemprop="value"
+                                                            content="от 2 мес"
+                                                        />
+                                                        от 2 мес
+                                                    </span>
+                                                </p>
+                                                <img
+                                                    src="/time.svg"
+                                                    alt="time"
+                                                />
                                             </div>
                                         </div>
 
                                         <div class="catalog__card-footer">
-                                            <h3 class="catalog__card-title">
+                                            <h3
+                                                class="catalog__card-title"
+                                                itemprop="name"
+                                            >
                                                 Жилой дом
                                             </h3>
                                             <button
                                                 class="button modal__button"
                                             >
-                                                <img src="/link.svg" alt="link"/>
+                                                <img
+                                                    src="/link.svg"
+                                                    alt="link"
+                                                />
                                             </button>
                                         </div>
                                     </div>
@@ -570,7 +1289,7 @@
                                                     ></div>
                                                 </button>
                                             </div>
-                                            <p>
+                                            <p itemprop="description">
                                                 Модульный деревянный дом 163 м²
                                                 – стильный и комфортный дом,
                                                 выполненный в современном стиле
@@ -582,31 +1301,113 @@
                                                 удобство и комфорт для всей
                                                 семьи.
                                             </p>
+
                                             <div
                                                 class="back__content-complectation"
                                             >
                                                 <h3>Комплектация</h3>
                                                 <ul>
-                                                    <li>Прихожая</li>
-                                                    <li>Котельная</li>
-                                                    <li>Холл</li>
-                                                    <li>2x Спальня</li>
-                                                    <li>Санузел</li>
-                                                    <li>Гостинная кухня</li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Прихожая"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >Прихожая</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Котельная"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >Котельная</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Холл"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >Холл</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Спальни"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >2x Спальня</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Санузел"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >Санузел</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Гостиная кухня"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >Гостиная
+                                                            кухня</span
+                                                        >
+                                                    </li>
                                                 </ul>
                                             </div>
+
                                             <div>
                                                 <img
                                                     class="back__content-img"
                                                     src="/catalog__card-1.png"
                                                     alt="background"
+                                                    itemprop="image"
                                                 />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="card catalog__card">
+                                <div
+                                    class="card catalog__card"
+                                    itemscope
+                                    itemtype="https://schema.org/Product"
+                                >
+                                    <meta itemprop="category" content="Дом" />
+
                                     <div class="front__content">
                                         <div class="front__content-brief">
                                             <div
@@ -615,34 +1416,101 @@
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
-                                                    <p>123 м2</p>
-                                                    <img src="/square.svg" alt="square"/>
+                                                    <p>
+                                                        <span
+                                                            itemprop="additionalProperty"
+                                                            itemscope
+                                                            itemtype="https://schema.org/PropertyValue"
+                                                        >
+                                                            <meta
+                                                                itemprop="name"
+                                                                content="Площадь"
+                                                            />
+                                                            <meta
+                                                                itemprop="value"
+                                                                content="123"
+                                                            />
+                                                            <meta
+                                                                itemprop="unitCode"
+                                                                content="MTK"
+                                                            />
+                                                            123 м²
+                                                        </span>
+                                                    </p>
+                                                    <img
+                                                        src="/square.svg"
+                                                        alt="square"
+                                                    />
                                                 </div>
 
                                                 <div
                                                     class="front__content-brief__item"
                                                 >
-                                                    <p>8 комнат</p>
-                                                    <img src="/bed.svg" alt="bed"/>
+                                                    <p>
+                                                        <span
+                                                            itemprop="additionalProperty"
+                                                            itemscope
+                                                            itemtype="https://schema.org/PropertyValue"
+                                                        >
+                                                            <meta
+                                                                itemprop="name"
+                                                                content="Количество комнат"
+                                                            />
+                                                            <meta
+                                                                itemprop="value"
+                                                                content="8"
+                                                            />
+                                                            8 комнат
+                                                        </span>
+                                                    </p>
+                                                    <img
+                                                        src="/bed.svg"
+                                                        alt="bed"
+                                                    />
                                                 </div>
                                             </div>
 
                                             <div
                                                 class="front__content-brief__item"
                                             >
-                                                <p>от 2 мес</p>
-                                                <img src="/time.svg" alt="time"/>
+                                                <p>
+                                                    <span
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Срок строительства"
+                                                        />
+                                                        <meta
+                                                            itemprop="value"
+                                                            content="от 2 мес"
+                                                        />
+                                                        от 2 мес
+                                                    </span>
+                                                </p>
+                                                <img
+                                                    src="/time.svg"
+                                                    alt="time"
+                                                />
                                             </div>
                                         </div>
 
                                         <div class="catalog__card-footer">
-                                            <h3 class="catalog__card-title">
+                                            <h3
+                                                class="catalog__card-title"
+                                                itemprop="name"
+                                            >
                                                 Жилой дом
                                             </h3>
                                             <button
                                                 class="button modal__button"
                                             >
-                                                <img src="/link.svg" alt="link"/>
+                                                <img
+                                                    src="/link.svg"
+                                                    alt="link"
+                                                />
                                             </button>
                                         </div>
                                     </div>
@@ -658,8 +1526,8 @@
                                                     ></div>
                                                 </button>
                                             </div>
-                                            <p>
-                                                Модульный деревянный дом 163 м²
+                                            <p itemprop="description">
+                                                Модульный деревянный дом 123 м²
                                                 – стильный и комфортный дом,
                                                 выполненный в современном стиле
                                                 с использованием
@@ -670,24 +1538,100 @@
                                                 удобство и комфорт для всей
                                                 семьи.
                                             </p>
+
                                             <div
                                                 class="back__content-complectation"
                                             >
                                                 <h3>Комплектация</h3>
                                                 <ul>
-                                                    <li>Прихожая</li>
-                                                    <li>Котельная</li>
-                                                    <li>Холл</li>
-                                                    <li>2x Спальня</li>
-                                                    <li>Санузел</li>
-                                                    <li>Гостинная кухня</li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Прихожая"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >Прихожая</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Котельная"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >Котельная</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Холл"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >Холл</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Спальни"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >2x Спальня</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Санузел"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >Санузел</span
+                                                        >
+                                                    </li>
+                                                    <li
+                                                        itemprop="additionalProperty"
+                                                        itemscope
+                                                        itemtype="https://schema.org/PropertyValue"
+                                                    >
+                                                        <meta
+                                                            itemprop="name"
+                                                            content="Гостиная кухня"
+                                                        />
+                                                        <span itemprop="value"
+                                                            >Гостиная
+                                                            кухня</span
+                                                        >
+                                                    </li>
                                                 </ul>
                                             </div>
+
                                             <div>
                                                 <img
                                                     class="back__content-img"
                                                     src="/catalog__card-1.png"
                                                     alt="background"
+                                                    itemprop="image"
                                                 />
                                             </div>
                                         </div>
@@ -699,7 +1643,12 @@
                 </div>
             </section>
 
-            <section class="reviews" id="reviews">
+            <section
+                class="reviews"
+                id="reviews"
+                itemscope
+                itemtype="https://schema.org/ItemList"
+            >
                 <div class="container">
                     <h2>Отзывы</h2>
                     <div
@@ -710,196 +1659,546 @@
                     >
                         <div class="swiper__container">
                             <div class="review__group">
-                                <div class="review__card">
+                                <div
+                                    class="review__card"
+                                    itemscope
+                                    itemprop="itemListElement"
+                                    itemtype="https://schema.org/Review"
+                                >
                                     <div class="review__title">
-                                        <img src="/review-2.png" class="review__card-avatar" alt="avatar"/>
+                                        <img
+                                            src="/review-2.png"
+                                            class="review__card-avatar"
+                                            alt="avatar"
+                                        />
                                         <div class="review__title-content">
-                                            <p class="review__title-name">Юрий Николаевич</p>
-                                            <div class="review__title-stars">
-                                                <img src="/star.svg" alt="star"/>
-                                                <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/>
+                                            <p
+                                                class="review__title-name"
+                                                itemprop="author"
+                                            >
+                                                Юрий Николаевич
+                                            </p>
+                                            <div
+                                                class="review__title-stars"
+                                                itemprop="reviewRating"
+                                                itemscope
+                                                itemtype="https://schema.org/Rating"
+                                            >
+                                                <meta
+                                                    itemprop="ratingValue"
+                                                    content="5"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="review__description">
-                                        Данная организация в лице директора,очень хорошо выполнила нам объект который не кто не брал. За три дня снесли гаражный коператив. вы просто большие молодцы.
+                                    <div
+                                        class="review__description"
+                                        itemprop="reviewBody"
+                                    >
+                                        Данная организация в лице директора
+                                        очень хорошо выполнила нам объект,
+                                        который никто не брал. За три дня снесли
+                                        гаражный кооператив. Вы просто большие
+                                        молодцы.
                                     </div>
                                 </div>
 
-                                <div class="review__card">
-                                <div class="review__title">
-                                    <img src="/review-3.png" class="review__card-avatar" alt="avatar"/>
-                                    <div class="review__title-content">
-                                        <p class="review__title-name">Misha098</p>
-                                        <div class="review__title-stars">
-                                            <img src="/star.svg" alt="star"/>
-                                            <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/>
+                                <div
+                                    class="review__card"
+                                    itemscope
+                                    itemprop="itemListElement"
+                                    itemtype="https://schema.org/Review"
+                                >
+                                    <div class="review__title">
+                                        <img
+                                            src="/review-3.png"
+                                            class="review__card-avatar"
+                                            alt="avatar"
+                                        />
+                                        <div class="review__title-content">
+                                            <p
+                                                class="review__title-name"
+                                                itemprop="author"
+                                            >
+                                                Misha098
+                                            </p>
+                                            <div
+                                                class="review__title-stars"
+                                                itemprop="reviewRating"
+                                                itemscope
+                                                itemtype="https://schema.org/Rating"
+                                            >
+                                                <meta
+                                                    itemprop="ratingValue"
+                                                    content="5"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
+                                    <div
+                                        class="review__description"
+                                        itemprop="reviewBody"
+                                    >
+                                        В процессе работы учли все наши
+                                        пожелания — от планировки до мелочей в
+                                        отделке. Строительство шло чётко по
+                                        плану, без задержек и неожиданных
+                                        проблем. В итоге мы получили именно тот
+                                        дом, о котором мечтали.
+                                    </div>
                                 </div>
-                                <div class="review__description">
-                                    В процессе работы учли все наши пожелания — от планировки до мелочей в отделке. Строительство шло чётко по плану, без задержек и неожиданных проблем. В итоге мы получили именно тот дом, о котором мечтали.
-                                </div>
-                            </div>
                             </div>
 
                             <div class="review__group">
-                                <div class="review__card">
+                                <div
+                                    class="review__card"
+                                    itemscope
+                                    itemprop="itemListElement"
+                                    itemtype="https://schema.org/Review"
+                                >
                                     <div class="review__title">
-                                        <img src="/review-4.png" class="review__card-avatar" alt="avatar"/>
+                                        <img
+                                            src="/review-4.png"
+                                            class="review__card-avatar"
+                                            alt="avatar"
+                                        />
                                         <div class="review__title-content">
-                                            <p class="review__title-name">Оксана Иванова</p>
-                                            <div class="review__title-stars">
-                                                <img src="/star.svg" alt="star"/>
-                                                <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/>
+                                            <p
+                                                class="review__title-name"
+                                                itemprop="author"
+                                            >
+                                                Оксана Иванова
+                                            </p>
+                                            <div
+                                                class="review__title-stars"
+                                                itemprop="reviewRating"
+                                                itemscope
+                                                itemtype="https://schema.org/Rating"
+                                            >
+                                                <meta
+                                                    itemprop="ratingValue"
+                                                    content="5"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="review__description">
-                                        Дом установили в кратчайшие сроки, все выполнено аккуратно и добротно. Внутри просторно, тепло и ощущается настоящий комфорт. Очень довольны!
+                                    <div
+                                        class="review__description"
+                                        itemprop="reviewBody"
+                                    >
+                                        Дом установили в кратчайшие сроки, все
+                                        выполнено аккуратно и добротно. Внутри
+                                        просторно, тепло и ощущается настоящий
+                                        комфорт. Очень довольны!
                                     </div>
                                 </div>
 
-                                <div class="review__card">
-                                <div class="review__title">
-                                    <img src="/review-1.png" class="review__card-avatar" alt="avatar"/>
-                                    <div class="review__title-content">
-                                        <p class="review__title-name">Levashov M.</p>
-                                        <div class="review__title-stars">
-                                            <img src="/star.svg" alt="star"/>
-                                            <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img alt="star" src="/star.svg"/><img src="/star.svg" alt="star"/>
+                                <div
+                                    class="review__card"
+                                    itemscope
+                                    itemprop="itemListElement"
+                                    itemtype="https://schema.org/Review"
+                                >
+                                    <div class="review__title">
+                                        <img
+                                            src="/review-1.png"
+                                            class="review__card-avatar"
+                                            alt="avatar"
+                                        />
+                                        <div class="review__title-content">
+                                            <p
+                                                class="review__title-name"
+                                                itemprop="author"
+                                            >
+                                                Levashov M.
+                                            </p>
+                                            <div
+                                                class="review__title-stars"
+                                                itemprop="reviewRating"
+                                                itemscope
+                                                itemtype="https://schema.org/Rating"
+                                            >
+                                                <meta
+                                                    itemprop="ratingValue"
+                                                    content="5"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="review__description">
-                                    Большой выбор и быстрое производство с установкой. Спасибо за прекрасно проделанную работу!
+                                    <div
+                                        class="review__description"
+                                        itemprop="reviewBody"
+                                    >
+                                        Большой выбор и быстрое производство с
+                                        установкой. Спасибо за прекрасно
+                                        проделанную работу!
+                                    </div>
                                 </div>
                             </div>
 
-
-
-                        </div>
-
-                        <div class="review__group">
-                            <div class="review__card">
-                                <div class="review__title">
-                                    <img src="/review-6.png" class="review__card-avatar" alt="avatar"/>
-                                    <div class="review__title-content">
-                                        <p class="review__title-name">Anutka_1979</p>
-                                        <div class="review__title-stars">
-                                            <img src="/star.svg" alt="star"/>
-                                            <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/>
+                            <div class="review__group">
+                                <div
+                                    class="review__card"
+                                    itemscope
+                                    itemprop="itemListElement"
+                                    itemtype="https://schema.org/Review"
+                                >
+                                    <div class="review__title">
+                                        <img
+                                            src="/review-6.png"
+                                            class="review__card-avatar"
+                                            alt="avatar"
+                                        />
+                                        <div class="review__title-content">
+                                            <p
+                                                class="review__title-name"
+                                                itemprop="author"
+                                            >
+                                                Anutka_1979
+                                            </p>
+                                            <div
+                                                class="review__title-stars"
+                                                itemprop="reviewRating"
+                                                itemscope
+                                                itemtype="https://schema.org/Rating"
+                                            >
+                                                <meta
+                                                    itemprop="ratingValue"
+                                                    content="5"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
+                                    <div
+                                        class="review__description"
+                                        itemprop="reviewBody"
+                                    >
+                                        Все произведено без задержек.
+                                        Специалист, который нас консультировал,
+                                        выслушал нас и подобрал хороший вариант.
+                                    </div>
                                 </div>
-                                <div class="review__description">
-                                    Все произведено без задержек. Специалист, который нас консультировал, выслушал нас и подобрал хороший вариант.
-                                </div>
-                            </div>
 
-                            <div class="review__card">
-                            <div class="review__title">
-                                <img src="/review-5.png" class="review__card-avatar" alt="avatar"/>
-                                <div class="review__title-content">
-                                    <p class="review__title-name">Рустам Х.</p>
-                                    <div class="review__title-stars">
-                                        <img src="/star.svg" alt="star"/>
-                                        <img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/><img src="/star.svg" alt="star"/>
+                                <div
+                                    class="review__card"
+                                    itemscope
+                                    itemprop="itemListElement"
+                                    itemtype="https://schema.org/Review"
+                                >
+                                    <div class="review__title">
+                                        <img
+                                            src="/review-5.png"
+                                            class="review__card-avatar"
+                                            alt="avatar"
+                                        />
+                                        <div class="review__title-content">
+                                            <p
+                                                class="review__title-name"
+                                                itemprop="author"
+                                            >
+                                                Рустам Х.
+                                            </p>
+                                            <div
+                                                class="review__title-stars"
+                                                itemprop="reviewRating"
+                                                itemscope
+                                                itemtype="https://schema.org/Rating"
+                                            >
+                                                <meta
+                                                    itemprop="ratingValue"
+                                                    content="5"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                                <img
+                                                    src="/star.svg"
+                                                    alt="star"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="review__description"
+                                        itemprop="reviewBody"
+                                    >
+                                        Второй раз обращаюсь в эту компанию. В
+                                        первый раз обращался за баней в 2021
+                                        году, сейчас обратился за жилым домом,
+                                        все как всегда качественно и быстро!
                                     </div>
                                 </div>
                             </div>
-                            <div class="review__description">
-                                Второй раз обращаюсь в эту компанию. В первый раз обращался за баней в 2021 году, чейчас обратился за жилым домом, все как всегда качествнно и быстро!
-                            </div>
                         </div>
-
-
                     </div>
-
-
                 </div>
             </section>
 
-            <section class="faq" id="faq">
+            <section
+                class="faq"
+                id="faq"
+                itemscope
+                itemtype="https://schema.org/FAQPage"
+            >
                 <div class="container">
                     <h2>FAQ</h2>
                     <div class="faq__list">
-                        <div class="faq__item">
+                        <div
+                            class="faq__item"
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <div class="accordion">
-                                Предоставляете ли вы гарантию на свою продукцию и услуги?
+                                <span itemprop="name"
+                                    >Что такое модульные дома Kela?</span
+                                >
                                 <button class="acordion__button">
-                                    <div  class="acordion__button-icon"/>
+                                    <div class="acordion__button-icon"></div>
                                 </button>
-                             </div>
-                             <div class="accordion__description">
-                                <p>
-                                    Да, мы предоставляем гарантию на качество нашей продукции и выполнение услуг. Мы также
-                                    готовы предоставить сервисное обслуживание и помощь в случае каких-либо проблем или
-                                    несоответствий.
+                            </div>
+                            <div
+                                class="accordion__description"
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                            >
+                                <p itemprop="text">
+                                    Модульные дома Kela – это сборные деревянные
+                                    конструкции, изготовленные на производстве и
+                                    доставляемые на участок в готовом виде для
+                                    быстрой установки.
                                 </p>
                             </div>
                         </div>
 
-                        <div class="faq__item">
+                        <div
+                            class="faq__item"
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <div class="accordion">
-                                Предоставляете ли вы гарантию на свою продукцию и услуги?
+                                <span itemprop="name"
+                                    >Из какого материала изготавливаются дома
+                                    Kela?</span
+                                >
                                 <button class="acordion__button">
-                                    <div  class="acordion__button-icon"/>
+                                    <div class="acordion__button-icon"></div>
                                 </button>
-                             </div>
-                             <div class="accordion__description">
-                                <p>
-                                    Да, мы предоставляем гарантию на качество нашей продукции и выполнение услуг. Мы также
-                                    готовы предоставить сервисное обслуживание и помощь в случае каких-либо проблем или
-                                    несоответствий.
+                            </div>
+                            <div
+                                class="accordion__description"
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                            >
+                                <p itemprop="text">
+                                    Дома Kela строятся из высококачественной
+                                    древесины, обеспечивающей экологичность,
+                                    долговечность и комфорт проживания в любое
+                                    время года.
                                 </p>
                             </div>
                         </div>
 
-                        <div class="faq__item">
+                        <div
+                            class="faq__item"
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <div class="accordion">
-                                Предоставляете ли вы гарантию на свою продукцию и услуги?
+                                <span itemprop="name"
+                                    >Можно ли изменить планировку или заказать
+                                    индивидуальный проект?</span
+                                >
                                 <button class="acordion__button">
-                                    <div  class="acordion__button-icon"/>
+                                    <div class="acordion__button-icon"></div>
                                 </button>
-                             </div>
-                             <div class="accordion__description">
-                                <p>
-                                    Да, мы предоставляем гарантию на качество нашей продукции и выполнение услуг. Мы также
-                                    готовы предоставить сервисное обслуживание и помощь в случае каких-либо проблем или
-                                    несоответствий.
+                            </div>
+                            <div
+                                class="accordion__description"
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                            >
+                                <p itemprop="text">
+                                    Да, мы разрабатываем уникальные проекты и
+                                    можем адаптировать готовые решения под ваши
+                                    пожелания и особенности участка.
                                 </p>
                             </div>
                         </div>
 
-                        <div class="faq__item">
+                        <div
+                            class="faq__item"
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <div class="accordion">
-                                Предоставляете ли вы гарантию на свою продукцию и услуги?
+                                <span itemprop="name"
+                                    >Сколько времени занимает установка
+                                    модульного дома?</span
+                                >
                                 <button class="acordion__button">
-                                    <div  class="acordion__button-icon"/>
+                                    <div class="acordion__button-icon"></div>
                                 </button>
-                             </div>
-                             <div class="accordion__description">
-                                <p>
-                                    Да, мы предоставляем гарантию на качество нашей продукции и выполнение услуг. Мы также
-                                    готовы предоставить сервисное обслуживание и помощь в случае каких-либо проблем или
-                                    несоответствий.
+                            </div>
+                            <div
+                                class="accordion__description"
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                            >
+                                <p itemprop="text">
+                                    Установка модульного дома Kela занимает от
+                                    нескольких дней до пары недель в зависимости
+                                    от проекта и подготовленности участка.
                                 </p>
                             </div>
                         </div>
 
-                        <div class="faq__item">
+                        <div
+                            class="faq__item"
+                            itemscope
+                            itemprop="mainEntity"
+                            itemtype="https://schema.org/Question"
+                        >
                             <div class="accordion">
-                                Предоставляете ли вы гарантию на свою продукцию и услуги?
+                                <span itemprop="name"
+                                    >Какой фундамент требуется для модульного
+                                    дома?</span
+                                >
                                 <button class="acordion__button">
-                                    <div  class="acordion__button-icon"/>
+                                    <div class="acordion__button-icon"></div>
                                 </button>
-                             </div>
-                             <div class="accordion__description">
-                                <p>
-                                    Да, мы предоставляем гарантию на качество нашей продукции и выполнение услуг. Мы также
-                                    готовы предоставить сервисное обслуживание и помощь в случае каких-либо проблем или
-                                    несоответствий.
+                            </div>
+                            <div
+                                class="accordion__description"
+                                itemscope
+                                itemprop="acceptedAnswer"
+                                itemtype="https://schema.org/Answer"
+                            >
+                                <p itemprop="text">
+                                    Дома Kela могут устанавливаться на разные
+                                    типы фундаментов: свайно-винтовой, ленточный
+                                    или плитный, в зависимости от грунта и
+                                    условий эксплуатации.
                                 </p>
                             </div>
                         </div>
@@ -907,46 +2206,80 @@
                 </div>
             </section>
 
-            <section class="contacts" id="contacts">
+            <section
+                class="contacts"
+                id="contacts"
+                itemscope
+                itemtype="https://schema.org/ContactPoint"
+            >
                 <div class="container contacts__container">
                     <div class="contacts__content">
                         <h3>Обратитесь к нам любым удобным способом</h3>
                         <div class="contacts__list">
                             <div class="contact__item">
                                 <div class="contact__item-title">
-                                    <img src="/phone.svg" alt="phone"/>
+                                    <img src="/phone.svg" alt="phone" />
                                     <p>Позвонить по телефону</p>
                                 </div>
-                                <p class="contact__item-description">+7 911 087 55 58</p>
+                                <p
+                                    class="contact__item-description"
+                                    itemprop="telephone"
+                                >
+                                    +7 921 989 61 22
+                                </p>
                             </div>
 
                             <div class="contact__item">
                                 <div class="contact__item-title">
-                                    <img src="/mail.svg" alt="mail"/>
+                                    <img src="/mail.svg" alt="mail" />
                                     <p>Написать на почту</p>
                                 </div>
-                                <p class="contact__item-description">pskbona@mail.ru</p>
+                                <p
+                                    class="contact__item-description"
+                                    itemprop="email"
+                                >
+                                    pskbona@mail.ru
+                                </p>
                             </div>
 
-                            <div class="contact__item">
+                            <div
+                                class="contact__item"
+                                itemscope
+                                itemtype="https://schema.org/PostalAddress"
+                            >
                                 <div class="contact__item-title">
-                                    <img src="/location.svg" alt="location"/>
+                                    <img src="/location.svg" alt="location" />
                                     <p>Приехать в офис</p>
                                 </div>
-                                <p class="contact__item-description">Санкт-Петербург, Выборгская ул., 8 этаж 2, офис 205</p>
+                                <p class="contact__item-description">
+                                    <span itemprop="streetAddress"
+                                        >Выборгская ул., 8 этаж 2, офис
+                                        205</span
+                                    >,
+                                    <span itemprop="addressLocality"
+                                        >Санкт-Петербург</span
+                                    >,
+                                    <span itemprop="addressCountry">RU</span>
+                                </p>
                             </div>
-
                         </div>
-                        <div><a class="button button_primary" href="#feedback">Оставить заявку</a></div>
+                        <div>
+                            <a class="button button_primary" href="#feedback"
+                                >Оставить заявку</a
+                            >
+                        </div>
                     </div>
 
                     <div class="iframe__wrapper">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2d231dcd66718505c3e29ad4913dbf97a0fe769b000890fe6359ba85681b260c&amp;source=constructor" width="650" height="418" frameborder="0"></iframe>
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A2d231dcd66718505c3e29ad4913dbf97a0fe769b000890fe6359ba85681b260c&amp;source=constructor"
+                            width="650"
+                            height="418"
+                            frameborder="0"
+                        ></iframe>
                     </div>
                 </div>
             </section>
-
-
 
             <section class="notifications"></section>
 
@@ -955,30 +2288,41 @@
                     <strong class="notification__status"></strong>
                     <p class="notification__reason"></p>
                     <button class="notification__close">
-                        <img src="/public/cross.svg" class="cross" alt="cross"/>
+                        <img
+                            src="/public/cross.svg"
+                            class="cross"
+                            alt="cross"
+                        />
                     </button>
                 </div>
             </template>
         </main>
 
-        <footer>
+        <footer itemscope itemtype="https://schema.org/Organization">
             <div class="container footer__content">
                 <div class="footer__top">
-                    <div class="footer__top-item"><img src="/logo-white.svg" alt="logo"/></div>
-
                     <div class="footer__top-item">
-                        <a><img src="/whatsapp.svg" alt="whatsapp"/></a>
-                        <a><img src="/telegram.svg" alt="telegram"/></a>
+                        <img src="/logo-white.svg" alt="logo" itemprop="logo" />
                     </div>
 
-                    <p class="footer__top-item">+7 911 087 55 58</p>
+                    <div>
+                        <a href="https://wa.me/79219896122" itemprop="sameAs"
+                            ><img src="/whatsapp.svg" alt="whatsapp"
+                        /></a>
+                        <a href="https://t.me/pskbona" itemprop="sameAs"
+                            ><img src="/telegram.svg" alt="telegram"
+                        /></a>
+                    </div>
+
+                    <p class="footer__top-item" itemprop="telephone">
+                        +7 921 989 61 22
+                    </p>
                 </div>
 
-                <hr>
+                <hr />
 
                 <div class="footer__bottom">
                     <p>© Все права защищены BONA 2025</p>
-                    <a>Политика конфиденциальности</a>
                 </div>
             </div>
         </footer>

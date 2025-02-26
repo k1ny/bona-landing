@@ -76,7 +76,7 @@ ul {
     color: white;
 }
 
-.button_primary:hover {
+.button_primary:not(:disabled):hover {
     background-color: var(--color-dar-green);
     color: white;
 }
@@ -94,8 +94,12 @@ ul {
     font-size: 1.25rem;
 }
 
-.button_resize:hover {
+.button_resize:not(:disabled):hover {
     scale: 1.04;
+}
+
+.button:disabled {
+    background: gray;
 }
 
 ol {

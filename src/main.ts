@@ -144,6 +144,7 @@ formButton.addEventListener("click", async (e) => {
     return;
   } else
     try {
+      formButton.disabled = true;
       const response = await fetch("/api/send", {
         method: "POST",
         headers: {
@@ -171,6 +172,7 @@ formButton.addEventListener("click", async (e) => {
     } catch (error) {
       popup({ type: "error", message: "Что-то пошло не так..." });
     }
+  formButton.disabled = false;
 });
 
 function createSwipers(pointer: Pointer, screen: Screen) {
