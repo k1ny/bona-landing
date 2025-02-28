@@ -30,8 +30,15 @@ html {
     font-family: "Geologica";
     font-weight: 500;
     font-size: 1rem;
-
     scroll-behavior: smooth;
+
+    @media screen and (max-width: 1279px) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+    }
 }
 
 a {
@@ -49,6 +56,7 @@ h2 {
     font-weight: 500;
     text-align: center;
 }
+
 p {
     font-weight: 500;
 }
@@ -108,4 +116,42 @@ ol {
 
 img {
     pointer-events: none;
+}
+
+@media screen and (max-width: 1224px) {
+    h1 {
+        font-size: 2.7rem;
+        width: auto;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .button {
+        padding: 0.75rem 1rem;
+    }
+}
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+}
+@media screen and (max-width: 1279px) {
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    p {
+        font-size: 14px;
+    }
 }

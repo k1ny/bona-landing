@@ -37,3 +37,15 @@
 .review__description {
     font-weight: 400;
 }
+@media screen and (max-width: 1224px) {
+    .review__card {
+        padding: 1rem;
+        height: 13rem;
+        border-radius: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        background-color: white;
+    }
+}

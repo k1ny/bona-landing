@@ -1,6 +1,6 @@
 .hero {
     color: white;
-    margin-top: 4rem;
+    padding-top: 1rem;
     background:
         linear-gradient(
             to right,
@@ -24,7 +24,7 @@
     gap: 2rem;
     color: var(--color-grey);
     font-size: 1.25rem;
-    width: 33.375rem;
+    max-width: 33.375rem;
 }
 
 .hero__item {
@@ -35,9 +35,38 @@
 
 .hero__options a {
     color: white;
+    max-width: fit-content;
 }
 
 .hero__options {
     display: flex;
     gap: 2rem;
+}
+@media screen and (max-width: 1224px) {
+    .hero__options {
+        display: flex;
+        flex-direction: column;
+
+        gap: 2rem;
+    }
+
+    .hero .container {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+        padding: 6.65rem 0;
+    }
+    .hero {
+        color: white;
+        padding: 1rem;
+        background:
+            linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.4) 0%,
+                rgba(255, 255, 255, 0) 100%
+            ),
+            url("../public/hero-bg.png") no-repeat center;
+        background-size: cover;
+        border-radius: 0 0 5rem 5rem;
+    }
 }

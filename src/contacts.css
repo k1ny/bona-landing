@@ -40,3 +40,28 @@
     border-radius: 1.5rem;
     overflow: hidden;
 }
+.yandex-map {
+    width: 40rem;
+    height: 26rem;
+}
+
+@media screen and (max-width: 1224px) {
+    .contacts__content h3 {
+        width: fit-content;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+    .contacts__container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .iframe__wrapper {
+        border-radius: 1.5rem;
+        overflow: hidden;
+    }
+    .yandex-map {
+        width: 100%;
+        height: 16rem;
+    }
+}

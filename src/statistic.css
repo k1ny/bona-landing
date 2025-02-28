@@ -42,3 +42,38 @@
 .statistic__item:nth-child(3) {
     width: 17.25rem;
 }
+
+@media screen and (max-width: 1224px) {
+    .statistic__list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+        color: white;
+    }
+    .statistic__item:nth-child(1) {
+        width: auto;
+    }
+
+    .statistic__item:nth-child(2) {
+        width: auto;
+    }
+
+    .statistic__item:nth-child(3) {
+        width: auto;
+    }
+
+    .statistic__item-number {
+        font-weight: 800;
+        font-size: 4.5rem;
+    }
+
+    .statistic__item-label {
+        font-weight: 700;
+        font-size: 1.15rem;
+    }
+
+    .statistic__item-description {
+        font-size: 1rem;
+    }
+}

@@ -5,15 +5,6 @@ import { Screen } from "./common/screen";
 import { Touch } from "./common/touch";
 import { Swiper } from "./common/swiper";
 
-window.addEventListener("scroll", () => {
-  const header = document.querySelector(".header") as HTMLElement;
-  if (window.scrollY > 60) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
-});
-
 const number = document.querySelectorAll(".statistic__item-number");
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -198,8 +189,9 @@ const flippers = document.querySelectorAll(".modal__button");
 
 flippers.forEach(function (flipper) {
   flipper.addEventListener("click", function () {
-    const card = flipper.closest(".card"); // Находим ближайшую карточку
-    card?.classList.toggle("show"); // Переворачиваем только её
+    const card = flipper.closest(".card");
+    card?.classList.toggle("show");
+    ъ;
   });
 });
 
@@ -226,3 +218,34 @@ document.querySelectorAll(".faq__item").forEach((el) => {
     content.style.maxHeight = !height ? `${content.scrollHeight}px` : "";
   });
 });
+
+const createBurger = () => {
+  let active = false;
+
+  const burger = document.querySelector<HTMLElement>(".burger-button")!;
+  const menu = document.querySelector<HTMLElement>(".header__content")!;
+
+  const links = menu.querySelectorAll("a");
+
+  burger.addEventListener("click", () => {
+    if (!active) {
+      burger.dataset.open = "";
+      menu.dataset.open = "";
+      active = true;
+    } else {
+      delete burger.dataset.open;
+      delete menu.dataset.open;
+      active = false;
+    }
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      delete burger.dataset.open;
+      delete menu.dataset.open;
+      active = false;
+    });
+  });
+};
+
+createBurger();

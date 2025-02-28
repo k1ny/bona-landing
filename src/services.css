@@ -4,6 +4,7 @@
 .services .container {
     display: flex;
     flex-direction: column;
+    justify-items: center;
     gap: 3rem;
     padding: 4rem 0;
 }
@@ -88,7 +89,7 @@
 }
 
 .services__item:hover::before {
-    opacity: 1; /* Показываем фильтр при ховере */
+    opacity: 1;
 }
 
 .service__footer {
@@ -101,4 +102,39 @@
 .service__footer a {
     color: white;
     font-size: 0.85rem;
+}
+
+@media screen and (max-width: 1224px) {
+    .services__list {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services__item {
+        width: 90%;
+        height: 20rem;
+        border-radius: 1.25rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .services__item:hover .services__item-content {
+        transform: translateY(calc(100% - 6rem));
+    }
+
+    .services__item-content {
+        transform: translateY(calc(100%+1rem));
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .services__item:hover .services__item-content {
+        transform: translateY(calc(100% - 12rem));
+    }
+
+    .services__item-content {
+        transform: translateY(calc(100%));
+    }
 }

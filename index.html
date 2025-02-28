@@ -77,7 +77,28 @@
                     Заказать звонок
                 </a>
             </div>
+
+            <div class="burger_block container">
+                <button
+                    class="burger-button button button_size_icon button_variant_ghost"
+                >
+                    <img
+                        class="burger-button__open-icon"
+                        width="24"
+                        height="24"
+                        src="/burger.svg"
+                    />
+
+                    <img
+                        class="burger-button__close-icon"
+                        width="24"
+                        height="24"
+                        src="/cross.svg"
+                    />
+                </button>
+            </div>
         </header>
+        <div class="header_spacer"></div>
 
         <main>
             <section
@@ -2273,9 +2294,8 @@
                     <div class="iframe__wrapper">
                         <iframe
                             src="https://yandex.ru/map-widget/v1/?um=constructor%3A2d231dcd66718505c3e29ad4913dbf97a0fe769b000890fe6359ba85681b260c&amp;source=constructor"
-                            width="650"
-                            height="418"
                             frameborder="0"
+                            class="yandex-map"
                         ></iframe>
                     </div>
                 </div>
@@ -2314,9 +2334,13 @@
                         /></a>
                     </div>
 
-                    <p class="footer__top-item" itemprop="telephone">
+                    <a
+                        class="footer__top-item"
+                        itemprop="telephone"
+                        href="tel:+79219896122"
+                    >
                         +7 921 989 61 22
-                    </p>
+                    </a>
                 </div>
 
                 <hr />
