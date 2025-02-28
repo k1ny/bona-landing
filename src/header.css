@@ -18,13 +18,21 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(10px);
-    transition:
-        background 0.4s ease-in-out,
-        backdrop-filter 0.4s ease-in-out;
+
     padding: 0.25rem 0;
     z-index: 1000;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1rem);
+    z-index: -1;
 }
 
 .logo__container {
@@ -65,11 +73,16 @@
         position: fixed;
         top: 3.5rem;
         width: 100%;
-        background: rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(10rem);
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(1rem);
         z-index: 50;
         height: calc(100dvh - 3.5rem);
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+        padding-top: 1rem;
     }
 
     .header__content[data-open] .container {
@@ -80,8 +93,11 @@
     }
 
     .header__content[data-open] .navigation {
+        display: flex;
         flex-direction: column;
+        gap: 2.5rem;
     }
+
     .burger_block {
         display: flex;
         justify-content: end;
