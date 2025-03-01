@@ -191,31 +191,29 @@ flippers.forEach(function (flipper) {
   flipper.addEventListener("click", function () {
     const card = flipper.closest(".card");
     card?.classList.toggle("show");
-    ъ;
   });
 });
 
 document.querySelectorAll(".faq__item").forEach((el) => {
   el.addEventListener("click", () => {
     const content = el.querySelector(".accordion__description") as HTMLElement;
-    const height = content.style.maxHeight;
     const plusIcon = el.querySelector(".acordion__button") as HTMLElement;
-
-    document.querySelectorAll(".acordion__button-icon").forEach((icon) => {
-      if (icon !== plusIcon) {
-        icon.classList.remove("rotated");
-      }
-    });
+    const isOpen = content.style.maxHeight;
 
     document
       .querySelectorAll(".accordion__description")
       .forEach((contentEl) => {
-        const elContent = contentEl as HTMLElement;
-        elContent.style.maxHeight = "";
+        (contentEl as HTMLElement).style.maxHeight = "";
       });
 
-    plusIcon.classList.toggle("rotated");
-    content.style.maxHeight = !height ? `${content.scrollHeight}px` : "";
+    document.querySelectorAll(".acordion__button").forEach((icon) => {
+      icon.classList.remove("rotated");
+    });
+
+    if (!isOpen) {
+      content.style.maxHeight = `${content.scrollHeight}px`;
+      plusIcon.classList.add("rotated");
+    }
   });
 });
 
